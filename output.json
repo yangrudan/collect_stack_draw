@@ -1,0 +1,195 @@
+[
+    {
+        "CFrame": {
+            "ip": "0x75f7b76ecadf",
+            "file": "./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c",
+            "func": "__GI___clock_nanosleep",
+            "lineno": 78
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x75f7b76f9a27",
+            "file": "./posix/../sysdeps/unix/sysv/linux/nanosleep.c",
+            "func": "__GI___nanosleep",
+            "lineno": 25
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x75f7b681f8b7",
+            "file": "",
+            "func": "add(int, int)",
+            "lineno": 0
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x75f7b6831b72",
+            "file": "",
+            "func": "void pybind11::cpp_function::initialize<int (*&)(int, int), int, int, int, pybind11::name, pybind11::scope, pybind11::sibling, char [33]>(int (*&)(int, int), int (*)(int, int), pybind11::name const, pybind11::scope&, pybind11::sibling, char [33])::{lambda(pybind11::detail::function_call&)#1}::operator()(pybind11::detail::function_call&) const",
+            "lineno": 0
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x75f7b682e4ad",
+            "file": "",
+            "func": "pybind11::cpp_function::dispatcher(_object*, _object*, _object*)",
+            "lineno": 0
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x549185",
+            "file": "",
+            "func": "_PyObject_MakeTpCall",
+            "lineno": 0
+        }
+    },
+    {
+        "PyFrame": {
+            "file": "/home/yang/worksapce/demangle_l/main.py",
+            "func": "<module>",
+            "lineno": 3,
+            "locals": {
+                "__loader__": {
+                    "id": 129706792461056,
+                    "class": "_frozen_importlib_external.SourceFileLoader",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "<_frozen_importlib_external.SourceFileLoader object at 0x75f7b74a2300>"
+                },
+                "__package__": {
+                    "id": 10746016,
+                    "class": "builtins.NoneType",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "None"
+                },
+                "__spec__": {
+                    "id": 10746016,
+                    "class": "builtins.NoneType",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "None"
+                },
+                "__cached__": {
+                    "id": 10746016,
+                    "class": "builtins.NoneType",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "None"
+                },
+                "__builtins__": {
+                    "id": 129706796685632,
+                    "class": "builtins.module",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "<module 'builtins' (built-in)>"
+                },
+                "__name__": {
+                    "id": 129706797097264,
+                    "class": "builtins.str",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "__main__"
+                },
+                "add": {
+                    "id": 129706780204208,
+                    "class": "builtins.module",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "<module 'add' from '/home/yang/worksapce/demangle_l/add.cpython-312-x86_64-linux-gnu.so'>"
+                },
+                "__annotations__": {
+                    "id": 129706797097408,
+                    "class": "builtins.dict",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "{}"
+                },
+                "__doc__": {
+                    "id": 10746016,
+                    "class": "builtins.NoneType",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "None"
+                },
+                "__file__": {
+                    "id": 129706792508816,
+                    "class": "builtins.str",
+                    "shape": null,
+                    "dtype": null,
+                    "device": null,
+                    "value": "/home/yang/worksapce/demangle_l/main.py"
+                }
+            }
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x6b4bfa",
+            "file": "",
+            "func": "_PyRun_SimpleFileObject",
+            "lineno": 0
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x6b4a2f",
+            "file": "",
+            "func": "_PyRun_AnyFileObject",
+            "lineno": 0
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x6bca95",
+            "file": "",
+            "func": "Py_RunMain",
+            "lineno": 0
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x6bc57d",
+            "file": "",
+            "func": "Py_BytesMain",
+            "lineno": 0
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x75f7b762a1ca",
+            "file": "./csu/../sysdeps/nptl/libc_start_call_main.h",
+            "func": "__libc_start_call_main",
+            "lineno": 58
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x75f7b762a28b",
+            "file": "./csu/../csu/libc-start.c",
+            "func": "__libc_start_main_impl",
+            "lineno": 360
+        }
+    },
+    {
+        "CFrame": {
+            "ip": "0x657ce5",
+            "file": "",
+            "func": "_start",
+            "lineno": 0
+        }
+    }
+]
