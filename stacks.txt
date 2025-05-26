@@ -1,0 +1,14 @@
+__GI___clock_nanosleep (./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c:78) 1
+__GI___nanosleep (./posix/../sysdeps/unix/sysv/linux/nanosleep.c:25) 1
+add(int, int) (:0) 1
+void pybind11::cpp_function::initialize<int (*&)(int, int), int, int, int, pybind11::name, pybind11::scope, pybind11::sibling, char [33]>(int (*&)(int, int), int (*)(int, int), pybind11::name const, pybind11::scope&, pybind11::sibling, char [33])::{lambda(pybind11::detail::function_call&)#1}::operator()(pybind11::detail::function_call&) const (:0) 1
+pybind11::cpp_function::dispatcher(_object*, _object*, _object*) (:0) 1
+_PyObject_MakeTpCall (:0) 1
+<module> (/home/yang/worksapce/demangle_l/main.py:3) 1
+_PyRun_SimpleFileObject (:0) 1
+_PyRun_AnyFileObject (:0) 1
+Py_RunMain (:0) 1
+Py_BytesMain (:0) 1
+__libc_start_call_main (./csu/../sysdeps/nptl/libc_start_call_main.h:58) 1
+__libc_start_main_impl (./csu/../csu/libc-start.c:360) 1
+_start (:0) 1

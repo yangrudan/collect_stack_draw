@@ -10,8 +10,7 @@ sudo sysctl kernel.perf_event_paranoid=-1
 cd FrameGraph
 
 sudo perf record -g -- sleep 10  # 生成perf.data
-sudo perf script > out.perf
-sudo ./stackcollapse-perf.pl out.perf > out.stacks
-./stackcollapse-perf.pl out.perf > out.stacks
-sudo ./flamegraph.pl out.stacks > perf333.svg
+sudo perf script > out.perf  # 将 perf.data 转换为文本格式
+sudo ./stackcollapse-perf.pl out.perf > out.stacks  # 生成折叠后的调用栈文件
+sudo ./flamegraph.pl out.stacks > perf333.svg  # 生成火焰图
 ```
