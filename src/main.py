@@ -33,11 +33,14 @@ def main():
             endpoints, 
             max_workers=config.get("max_workers", 5)
         )
+        collector.save_to_json(stack_data, "debug_4ranks_stack_data.json")    
         
         # 生成火焰图
         flamegraph_bin = config.get("flamegraph_bin", "flamegraph.pl")
-        generator = FlameGraphGenerator(flamegraph_bin=flamegraph_bin)
-        generator.generate_flamegraph(stack_data, args.output)
+        generator = FlameGraphGenerator(input_json="./debug_4ranks_stack_data.json", 
+                                        output_file="./debug_4stacks",
+                                        flamegraph_bin=flamegraph_bin)
+        generator.generate_flamegraph("./debug_flamegraph_4ranks.svg")
         
         logger.info("任务完成")
         

@@ -2,6 +2,8 @@ import json
 import logging
 import subprocess
 
+import sys
+sys.path.append(".")
 
 # 配置日志
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -34,28 +36,34 @@ class FlameGraphGenerator:
             data = json.load(f)
         
         # 解析调用栈
-        stacks = []
-        for entry in data:
-            stack = []
-            if 'CFrame' in entry:
-                frame = entry['CFrame']
-                stack.append(f"{frame['func']} ({frame['file']}:{frame['lineno']})")
-            elif 'PyFrame' in entry:
-                frame = entry['PyFrame']
-                stack.append(f"{frame['func']} ({frame['file']}:{frame['lineno']})")
+        out_stacks = [[]]
+        for rank in data:
+            local_stack = []
+            for entry in rank:
+                stack = []
+                if 'CFrame' in entry:
+                    frame = entry['CFrame']
+                    stack.append(f"{frame['func']} ({frame['file']}:{frame['lineno']})")
+                elif 'PyFrame' in entry:
+                    frame = entry['PyFrame']
+                    stack.append(f"{frame['func']} ({frame['file']}:{frame['lineno']})")
+                
+                # 将调用栈路径添加到列表中
+                if stack:
+                    local_stack.append(';'.join(stack))  # 当前rank的堆栈
+            out_stacks.append(local_stack)  # 将当前rank的堆栈添加到总堆栈列表中
             
-            # 将调用栈路径添加到列表中
-            if stack:
-                stacks.append(';'.join(stack))
         
         # 翻转堆栈顺序
-        stacks.reverse()
+        for stack in out_stacks:
+            stack.reverse()  # 直接修改原列表
         
         # 写入输出文件
         with open(self.output_file, 'w') as f:
-            for stack in stacks:
-                f.write(f"{stack};")
-            f.write(" 1\n") 
+            for rank in out_stacks:
+                for stack in rank:
+                    f.write(f"{stack};")
+                f.write(" 1\n") 
     
     def generate_flamegraph(self, output_file: str) -> None:
         """生成火焰图
@@ -83,5 +91,6 @@ if __name__ == "__main__":
     # generator = FlameGraphGenerator(input_json="./tmp/output.json", output_file="./tmp/stacks.txt")
     # generator.generate_flamegraph("./tmp/flamegraph.svg")    
 
-    generator = FlameGraphGenerator(input_json="../tmp/4ranks_stack_data.json", output_file="../tmp/4stacks.txt")
-    generator.generate_flamegraph("../tmp/flamegraph_4ranks.svg")  
+    generator = FlameGraphGenerator(input_json="./debug_4ranks_stack_data.json", 
+                                    output_file="./debug_4stacks.txt")
+    generator.generate_flamegraph("./debug_flamegraph_4ranks.svg")  
