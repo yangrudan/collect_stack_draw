@@ -1,0 +1,11 @@
+{
+    "endpoints": [
+        "http://127.0.0.1:9922/apis/pythonext/callstack",
+        "http://127.0.0.1:9922/apis/pythonext/callstack",
+        "http://127.0.0.1:9922/apis/pythonext/callstack",
+        "http://127.0.0.1:9922/apis/pythonext/callstack"
+    ],
+    "timeout": 15,
+    "max_workers": 8,
+    "flamegraph_bin": "/home/yang/Downloads/FlameGraph-1.0/flamegraph.pl"
+} 

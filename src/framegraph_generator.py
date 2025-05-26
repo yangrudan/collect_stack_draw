@@ -80,5 +80,8 @@ class FlameGraphGenerator:
 
 
 if __name__ == "__main__":
-    generator = FlameGraphGenerator(input_json="./tmp/output.json", output_file="./tmp/stacks.txt")
-    generator.generate_flamegraph("./tmp/flamegraph.svg")    
+    # generator = FlameGraphGenerator(input_json="./tmp/output.json", output_file="./tmp/stacks.txt")
+    # generator.generate_flamegraph("./tmp/flamegraph.svg")    
+
+    generator = FlameGraphGenerator(input_json="../tmp/4ranks_stack_data.json", output_file="../tmp/4stacks.txt")
+    generator.generate_flamegraph("../tmp/flamegraph_4ranks.svg")  
