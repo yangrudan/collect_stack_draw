@@ -61,9 +61,10 @@ class FlameGraphGenerator:
         # 写入输出文件
         with open(self.output_file, 'w') as f:
             for rank in out_stacks:
-                for stack in rank:
-                    f.write(f"{stack};")
-                f.write(" 1\n") 
+                if rank != []:
+                    for stack in rank:
+                        f.write(f"{stack};")
+                    f.write(" 1\n") 
     
     def generate_flamegraph(self, output_file: str) -> None:
         """生成火焰图

@@ -38,7 +38,7 @@ def main():
         # 生成火焰图
         flamegraph_bin = config.get("flamegraph_bin", "flamegraph.pl")
         generator = FlameGraphGenerator(input_json="./debug_4ranks_stack_data.json", 
-                                        output_file="./debug_4stacks",
+                                        output_file="./debug_4stacks.txt",
                                         flamegraph_bin=flamegraph_bin)
         generator.generate_flamegraph("./debug_flamegraph_4ranks.svg")
         
