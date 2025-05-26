@@ -20,10 +20,14 @@ def parse_json_to_stacks(json_file, output_file):
         if stack:
             stacks.append(';'.join(stack))
     
+    # 翻转堆栈顺序
+    stacks.reverse()
+    
     # 写入输出文件
     with open(output_file, 'w') as f:
         for stack in stacks:
-            f.write(f"{stack} 1\n")
+            f.write(f"{stack};")
+        f.write(" 1\n")
 
 if __name__ == "__main__":
     json_file = "output.json"  # 输入的 JSON 文件

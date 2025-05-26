@@ -6,3 +6,8 @@
 
 # Step 2
 绘制火焰图
+
+```bash
+python read_json_2_stack.py
+/home/yang/Downloads/FlameGraph-1.0/flamegraph.pl stacks.txt > flamegraph.svg
+```
