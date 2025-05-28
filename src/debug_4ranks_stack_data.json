@@ -54,6 +54,30 @@
                 "func": "<module>",
                 "lineno": 3,
                 "locals": {
+                    "__package__": {
+                        "id": 10746016,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "__file__": {
+                        "id": 136815234162064,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "/home/yang/worksapce/demangle_l/main.py"
+                    },
+                    "__cached__": {
+                        "id": 10746016,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
                     "__annotations__": {
                         "id": 136815238832576,
                         "class": "builtins.dict",
@@ -61,6 +85,30 @@
                         "dtype": null,
                         "device": null,
                         "value": "{}"
+                    },
+                    "add": {
+                        "id": 136815221693936,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'add' from '/home/yang/worksapce/demangle_l/add.cpython-312-x86_64-linux-gnu.so'>"
+                    },
+                    "__name__": {
+                        "id": 136815238832432,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "__main__"
+                    },
+                    "__doc__": {
+                        "id": 10746016,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
                     },
                     "__spec__": {
                         "id": 10746016,
@@ -70,13 +118,144 @@
                         "device": null,
                         "value": "None"
                     },
-                    "__name__": {
-                        "id": 136815238832432,
-                        "class": "builtins.str",
+                    "__builtins__": {
+                        "id": 136815238420800,
+                        "class": "builtins.module",
                         "shape": null,
                         "dtype": null,
                         "device": null,
-                        "value": "__main__"
+                        "value": "<module 'builtins' (built-in)>"
+                    },
+                    "__loader__": {
+                        "id": 136815238849280,
+                        "class": "_frozen_importlib_external.SourceFileLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7c6ec7b62300>"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x6b4bfa",
+                "file": "",
+                "func": "_PyRun_SimpleFileObject",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x6b4a2f",
+                "file": "",
+                "func": "_PyRun_AnyFileObject",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x6bca95",
+                "file": "",
+                "func": "Py_RunMain",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x6bc57d",
+                "file": "",
+                "func": "Py_BytesMain",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec782a1ca",
+                "file": "./csu/../sysdeps/nptl/libc_start_call_main.h",
+                "func": "__libc_start_call_main",
+                "lineno": 58
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec782a28b",
+                "file": "./csu/../csu/libc-start.c",
+                "func": "__libc_start_main_impl",
+                "lineno": 360
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x657ce5",
+                "file": "",
+                "func": "_start",
+                "lineno": 0
+            }
+        }
+    ],
+    [
+        {
+            "CFrame": {
+                "ip": "0x7c6ec78ecadf",
+                "file": "./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c",
+                "func": "__GI___clock_nanosleep",
+                "lineno": 78
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec78f9a27",
+                "file": "./posix/../sysdeps/unix/sysv/linux/nanosleep.c",
+                "func": "__GI___nanosleep",
+                "lineno": 25
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec39e38b7",
+                "file": "",
+                "func": "add(int, int)",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec39f5b72",
+                "file": "",
+                "func": "void pybind11::cpp_function::initialize<int (*&)(int, int), int, int, int, pybind11::name, pybind11::scope, pybind11::sibling, char [33]>(int (*&)(int, int), int (*)(int, int), pybind11::name const, pybind11::scope&, pybind11::sibling, char [33])::{lambda(pybind11::detail::function_call&)#1}::operator()(pybind11::detail::function_call&) const",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec39f24ad",
+                "file": "",
+                "func": "pybind11::cpp_function::dispatcher(_object*, _object*, _object*)",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x549185",
+                "file": "",
+                "func": "_PyObject_MakeTpCall",
+                "lineno": 0
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/home/yang/worksapce/demangle_l/main.py",
+                "func": "<module>",
+                "lineno": 3,
+                "locals": {
+                    "__builtins__": {
+                        "id": 136815238420800,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'builtins' (built-in)>"
                     },
                     "__package__": {
                         "id": 10746016,
@@ -94,15 +273,178 @@
                         "device": null,
                         "value": "/home/yang/worksapce/demangle_l/main.py"
                     },
-                    "__builtins__": {
-                        "id": 136815238420800,
+                    "__annotations__": {
+                        "id": 136815238832576,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "add": {
+                        "id": 136815221693936,
                         "class": "builtins.module",
                         "shape": null,
                         "dtype": null,
                         "device": null,
-                        "value": "<module 'builtins' (built-in)>"
+                        "value": "<module 'add' from '/home/yang/worksapce/demangle_l/add.cpython-312-x86_64-linux-gnu.so'>"
                     },
                     "__cached__": {
+                        "id": 10746016,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "__spec__": {
+                        "id": 10746016,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "__name__": {
+                        "id": 136815238832432,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "__main__"
+                    },
+                    "__doc__": {
+                        "id": 10746016,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "__loader__": {
+                        "id": 136815238849280,
+                        "class": "_frozen_importlib_external.SourceFileLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7c6ec7b62300>"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x6b4bfa",
+                "file": "",
+                "func": "_PyRun_SimpleFileObject",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x6b4a2f",
+                "file": "",
+                "func": "_PyRun_AnyFileObject",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x6bca95",
+                "file": "",
+                "func": "Py_RunMain",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x6bc57d",
+                "file": "",
+                "func": "Py_BytesMain",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec782a1ca",
+                "file": "./csu/../sysdeps/nptl/libc_start_call_main.h",
+                "func": "__libc_start_call_main",
+                "lineno": 58
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec782a28b",
+                "file": "./csu/../csu/libc-start.c",
+                "func": "__libc_start_main_impl",
+                "lineno": 360
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x657ce5",
+                "file": "",
+                "func": "_start",
+                "lineno": 0
+            }
+        }
+    ],
+    [
+        {
+            "CFrame": {
+                "ip": "0x7c6ec78ecadf",
+                "file": "./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c",
+                "func": "__GI___clock_nanosleep",
+                "lineno": 78
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec78f9a27",
+                "file": "./posix/../sysdeps/unix/sysv/linux/nanosleep.c",
+                "func": "__GI___nanosleep",
+                "lineno": 25
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec39e38b7",
+                "file": "",
+                "func": "add(int, int)",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec39f5b72",
+                "file": "",
+                "func": "void pybind11::cpp_function::initialize<int (*&)(int, int), int, int, int, pybind11::name, pybind11::scope, pybind11::sibling, char [33]>(int (*&)(int, int), int (*)(int, int), pybind11::name const, pybind11::scope&, pybind11::sibling, char [33])::{lambda(pybind11::detail::function_call&)#1}::operator()(pybind11::detail::function_call&) const",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7c6ec39f24ad",
+                "file": "",
+                "func": "pybind11::cpp_function::dispatcher(_object*, _object*, _object*)",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x549185",
+                "file": "",
+                "func": "_PyObject_MakeTpCall",
+                "lineno": 0
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/home/yang/worksapce/demangle_l/main.py",
+                "func": "<module>",
+                "lineno": 3,
+                "locals": {
+                    "__doc__": {
                         "id": 10746016,
                         "class": "builtins.NoneType",
                         "shape": null,
@@ -118,6 +460,14 @@
                         "device": null,
                         "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7c6ec7b62300>"
                     },
+                    "__file__": {
+                        "id": 136815234162064,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "/home/yang/worksapce/demangle_l/main.py"
+                    },
                     "add": {
                         "id": 136815221693936,
                         "class": "builtins.module",
@@ -126,7 +476,47 @@
                         "device": null,
                         "value": "<module 'add' from '/home/yang/worksapce/demangle_l/add.cpython-312-x86_64-linux-gnu.so'>"
                     },
-                    "__doc__": {
+                    "__name__": {
+                        "id": 136815238832432,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "__main__"
+                    },
+                    "__package__": {
+                        "id": 10746016,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "__builtins__": {
+                        "id": 136815238420800,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'builtins' (built-in)>"
+                    },
+                    "__spec__": {
+                        "id": 10746016,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "__annotations__": {
+                        "id": 136815238832576,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "__cached__": {
                         "id": 10746016,
                         "class": "builtins.NoneType",
                         "shape": null,
@@ -249,226 +639,7 @@
                 "func": "<module>",
                 "lineno": 3,
                 "locals": {
-                    "__file__": {
-                        "id": 136815234162064,
-                        "class": "builtins.str",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "/home/yang/worksapce/demangle_l/main.py"
-                    },
-                    "__loader__": {
-                        "id": 136815238849280,
-                        "class": "_frozen_importlib_external.SourceFileLoader",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7c6ec7b62300>"
-                    },
-                    "__package__": {
-                        "id": 10746016,
-                        "class": "builtins.NoneType",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "None"
-                    },
-                    "__spec__": {
-                        "id": 10746016,
-                        "class": "builtins.NoneType",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "None"
-                    },
-                    "__annotations__": {
-                        "id": 136815238832576,
-                        "class": "builtins.dict",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "{}"
-                    },
-                    "__name__": {
-                        "id": 136815238832432,
-                        "class": "builtins.str",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "__main__"
-                    },
-                    "add": {
-                        "id": 136815221693936,
-                        "class": "builtins.module",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "<module 'add' from '/home/yang/worksapce/demangle_l/add.cpython-312-x86_64-linux-gnu.so'>"
-                    },
-                    "__builtins__": {
-                        "id": 136815238420800,
-                        "class": "builtins.module",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "<module 'builtins' (built-in)>"
-                    },
                     "__doc__": {
-                        "id": 10746016,
-                        "class": "builtins.NoneType",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "None"
-                    },
-                    "__cached__": {
-                        "id": 10746016,
-                        "class": "builtins.NoneType",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "None"
-                    }
-                }
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x6b4bfa",
-                "file": "",
-                "func": "_PyRun_SimpleFileObject",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x6b4a2f",
-                "file": "",
-                "func": "_PyRun_AnyFileObject",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x6bca95",
-                "file": "",
-                "func": "Py_RunMain",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x6bc57d",
-                "file": "",
-                "func": "Py_BytesMain",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec782a1ca",
-                "file": "./csu/../sysdeps/nptl/libc_start_call_main.h",
-                "func": "__libc_start_call_main",
-                "lineno": 58
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec782a28b",
-                "file": "./csu/../csu/libc-start.c",
-                "func": "__libc_start_main_impl",
-                "lineno": 360
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x657ce5",
-                "file": "",
-                "func": "_start",
-                "lineno": 0
-            }
-        }
-    ],
-    [
-        {
-            "CFrame": {
-                "ip": "0x7c6ec78ecadf",
-                "file": "./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c",
-                "func": "__GI___clock_nanosleep",
-                "lineno": 78
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec78f9a27",
-                "file": "./posix/../sysdeps/unix/sysv/linux/nanosleep.c",
-                "func": "__GI___nanosleep",
-                "lineno": 25
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec39e38b7",
-                "file": "",
-                "func": "add(int, int)",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec39f5b72",
-                "file": "",
-                "func": "void pybind11::cpp_function::initialize<int (*&)(int, int), int, int, int, pybind11::name, pybind11::scope, pybind11::sibling, char [33]>(int (*&)(int, int), int (*)(int, int), pybind11::name const, pybind11::scope&, pybind11::sibling, char [33])::{lambda(pybind11::detail::function_call&)#1}::operator()(pybind11::detail::function_call&) const",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec39f24ad",
-                "file": "",
-                "func": "pybind11::cpp_function::dispatcher(_object*, _object*, _object*)",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x549185",
-                "file": "",
-                "func": "_PyObject_MakeTpCall",
-                "lineno": 0
-            }
-        },
-        {
-            "PyFrame": {
-                "file": "/home/yang/worksapce/demangle_l/main.py",
-                "func": "<module>",
-                "lineno": 3,
-                "locals": {
-                    "__spec__": {
-                        "id": 10746016,
-                        "class": "builtins.NoneType",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "None"
-                    },
-                    "__name__": {
-                        "id": 136815238832432,
-                        "class": "builtins.str",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "__main__"
-                    },
-                    "__annotations__": {
-                        "id": 136815238832576,
-                        "class": "builtins.dict",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "{}"
-                    },
-                    "__cached__": {
                         "id": 10746016,
                         "class": "builtins.NoneType",
                         "shape": null,
@@ -484,14 +655,6 @@
                         "device": null,
                         "value": "None"
                     },
-                    "add": {
-                        "id": 136815221693936,
-                        "class": "builtins.module",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "<module 'add' from '/home/yang/worksapce/demangle_l/add.cpython-312-x86_64-linux-gnu.so'>"
-                    },
                     "__loader__": {
                         "id": 136815238849280,
                         "class": "_frozen_importlib_external.SourceFileLoader",
@@ -499,153 +662,6 @@
                         "dtype": null,
                         "device": null,
                         "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7c6ec7b62300>"
-                    },
-                    "__builtins__": {
-                        "id": 136815238420800,
-                        "class": "builtins.module",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "<module 'builtins' (built-in)>"
-                    },
-                    "__doc__": {
-                        "id": 10746016,
-                        "class": "builtins.NoneType",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "None"
-                    },
-                    "__file__": {
-                        "id": 136815234162064,
-                        "class": "builtins.str",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "/home/yang/worksapce/demangle_l/main.py"
-                    }
-                }
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x6b4bfa",
-                "file": "",
-                "func": "_PyRun_SimpleFileObject",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x6b4a2f",
-                "file": "",
-                "func": "_PyRun_AnyFileObject",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x6bca95",
-                "file": "",
-                "func": "Py_RunMain",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x6bc57d",
-                "file": "",
-                "func": "Py_BytesMain",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec782a1ca",
-                "file": "./csu/../sysdeps/nptl/libc_start_call_main.h",
-                "func": "__libc_start_call_main",
-                "lineno": 58
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec782a28b",
-                "file": "./csu/../csu/libc-start.c",
-                "func": "__libc_start_main_impl",
-                "lineno": 360
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x657ce5",
-                "file": "",
-                "func": "_start",
-                "lineno": 0
-            }
-        }
-    ],
-    [
-        {
-            "CFrame": {
-                "ip": "0x7c6ec78ecadf",
-                "file": "./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c",
-                "func": "__GI___clock_nanosleep",
-                "lineno": 78
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec78f9a27",
-                "file": "./posix/../sysdeps/unix/sysv/linux/nanosleep.c",
-                "func": "__GI___nanosleep",
-                "lineno": 25
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec39e38b7",
-                "file": "",
-                "func": "add(int, int)",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec39f5b72",
-                "file": "",
-                "func": "void pybind11::cpp_function::initialize<int (*&)(int, int), int, int, int, pybind11::name, pybind11::scope, pybind11::sibling, char [33]>(int (*&)(int, int), int (*)(int, int), pybind11::name const, pybind11::scope&, pybind11::sibling, char [33])::{lambda(pybind11::detail::function_call&)#1}::operator()(pybind11::detail::function_call&) const",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x7c6ec39f24ad",
-                "file": "",
-                "func": "pybind11::cpp_function::dispatcher(_object*, _object*, _object*)",
-                "lineno": 0
-            }
-        },
-        {
-            "CFrame": {
-                "ip": "0x549185",
-                "file": "",
-                "func": "_PyObject_MakeTpCall",
-                "lineno": 0
-            }
-        },
-        {
-            "PyFrame": {
-                "file": "/home/yang/worksapce/demangle_l/main.py",
-                "func": "<module>",
-                "lineno": 3,
-                "locals": {
-                    "__name__": {
-                        "id": 136815238832432,
-                        "class": "builtins.str",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "__main__"
                     },
                     "__spec__": {
                         "id": 10746016,
@@ -663,6 +679,30 @@
                         "device": null,
                         "value": "<module 'builtins' (built-in)>"
                     },
+                    "add": {
+                        "id": 136815221693936,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'add' from '/home/yang/worksapce/demangle_l/add.cpython-312-x86_64-linux-gnu.so'>"
+                    },
+                    "__cached__": {
+                        "id": 10746016,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "__name__": {
+                        "id": 136815238832432,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "__main__"
+                    },
                     "__file__": {
                         "id": 136815234162064,
                         "class": "builtins.str",
@@ -678,46 +718,6 @@
                         "dtype": null,
                         "device": null,
                         "value": "{}"
-                    },
-                    "__cached__": {
-                        "id": 10746016,
-                        "class": "builtins.NoneType",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "None"
-                    },
-                    "__package__": {
-                        "id": 10746016,
-                        "class": "builtins.NoneType",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "None"
-                    },
-                    "__doc__": {
-                        "id": 10746016,
-                        "class": "builtins.NoneType",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "None"
-                    },
-                    "__loader__": {
-                        "id": 136815238849280,
-                        "class": "_frozen_importlib_external.SourceFileLoader",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7c6ec7b62300>"
-                    },
-                    "add": {
-                        "id": 136815221693936,
-                        "class": "builtins.module",
-                        "shape": null,
-                        "dtype": null,
-                        "device": null,
-                        "value": "<module 'add' from '/home/yang/worksapce/demangle_l/add.cpython-312-x86_64-linux-gnu.so'>"
                     }
                 }
             }
