@@ -14,6 +14,23 @@
 
 ## 使用方法
 ```bash
+# 运行probing工具
+PROBING=1 PROBING_PORT=9922 python main.py
+
+# 运行collect_stack_draw工具
 cd src
 python main.py
 ```
+
+## 运行结果
+```
+❯ python main.py
+2025-05-28 13:59:33,759 - collect_stack_info - INFO - 正在从 http://127.0.0.1:9922/apis/pythonext/callstack 获取堆栈数据
+2025-05-28 13:59:33,759 - collect_stack_info - INFO - 正在从 http://127.0.0.1:9922/apis/pythonext/callstack 获取堆栈数据
+2025-05-28 13:59:33,759 - collect_stack_info - INFO - 正在从 http://127.0.0.1:9922/apis/pythonext/callstack 获取堆栈数据
+2025-05-28 13:59:33,759 - collect_stack_info - INFO - 正在从 http://127.0.0.1:9922/apis/pythonext/callstack 获取堆栈数据
+2025-05-28 13:59:37,775 - collect_stack_info - INFO - 数据已保存到 debug_4ranks_stack_data.json
+2025-05-28 13:59:37,777 - framegraph_generator - INFO - 执行命令: /home/yang/Downloads/FlameGraph-1.0/flamegraph.pl --title=Cluster stack information --colors=java --hash ./debug_4stacks.txt
+2025-05-28 13:59:37,801 - framegraph_generator - INFO - 火焰图已生成: ./debug_flamegraph_4ranks.svg
+2025-05-28 13:59:37,801 - __main__ - INFO - 任务完成
+`

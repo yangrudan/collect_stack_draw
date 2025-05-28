@@ -78,7 +78,7 @@ class FlameGraphGenerator:
              
         try:
             # 调用FlameGraph工具生成SVG
-            cmd = [self.flamegraph_bin, self.output_file]
+            cmd = [self.flamegraph_bin, "--title=Cluster stack information", "--colors=java", "--hash", self.output_file]
             logger.info(f"执行命令: {' '.join(cmd)}")
             result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
             with open(output_file, 'w') as out:
