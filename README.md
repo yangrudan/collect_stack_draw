@@ -4,11 +4,14 @@
 原始数据
 ![原始单rank stack](./pics/stack%202025-05-26%2010-37-55.png)
 
-单进程初版火焰图
+单进程 火焰图
 ![单rank stack](./pics/V0_2%202025-05-26%2010-40-15.png)
 
-多进程区分rank火焰图
-![多rank stack](./pics/V0_3%202025-05-28%2014-47-21.png)
+区分C++ python 火焰图
+![区分C++ python](./pics/V0_3%202025-05-28%2014-47-21.png)
+
+模拟采集4进程 火焰图
+![V0_4_2025-05-29_15-47-34.png](./pics/V0_4_2025-05-29_15-47-34.png)
 
 ## 设计思路
 - 1. 读取config.json文件
@@ -21,6 +24,7 @@
 ```bash
 # 运行probing工具
 PROBING=1 PROBING_PORT=9922 python main.py
+probing 19963 config "probing.server.address='10.107.204.71:12345'"     
 
 # 运行collect_stack_draw工具
 cd src
