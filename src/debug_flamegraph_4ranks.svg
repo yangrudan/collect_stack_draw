@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="310" onload="init(evt)" viewBox="0 0 1200 310" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="1798" onload="init(evt)" viewBox="0 0 1200 1798" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs >
@@ -329,70 +329,906 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="310.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="1798.0" fill="url(#background)"  />
 <text text-anchor="middle" x="600.00" y="24" font-size="17" font-family="Verdana" fill="rgb(0,0,0)"  >Cluster stack information</text>
-<text text-anchor="" x="10.00" y="293" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="details" > </text>
+<text text-anchor="" x="10.00" y="1781" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="details" > </text>
 <text text-anchor="" x="10.00" y="24" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="unzoom" onclick="unzoom()" style="opacity:0.0;cursor:pointer" >Reset Zoom</text>
 <text text-anchor="" x="1090.00" y="24" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="search" onmouseover="searchover()" onmouseout="searchout()" onclick="search_prompt()" style="opacity:0.1;cursor:pointer" >Search</text>
-<text text-anchor="" x="1090.00" y="293" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="matched" > </text>
+<text text-anchor="" x="1090.00" y="1781" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="matched" > </text>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>&lt;module&gt; (/home/yang/worksapce/demangle_l/main.py:3) (4 samples, 100.00%)</title><rect x="10.0" y="133" width="1180.0" height="15.0" fill="rgb(94,240,94)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="143.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >&lt;module&gt; (/home/yang/worksapce/demangle_l/main.py:3)</text>
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="709" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="719.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>__GI___nanosleep (./posix/../sysdeps/unix/sysv/linux/nanosleep.c:25) (4 samples, 100.00%)</title><rect x="10.0" y="53" width="1180.0" height="15.0" fill="rgb(228,91,91)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="63.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__GI___nanosleep (./posix/../sysdeps/unix/sysv/linux/nanosleep.c:25)</text>
+<title>pymain_run_file_obj (/usr/local/src/conda/python-3.10.16/Modules/main.c:357) (4 samples, 100.00%)</title><rect x="10.0" y="1653" width="1180.0" height="15.0" fill="rgb(250,123,123)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1663.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >pymain_run_file_obj (/usr/local/src/conda/python-3.10.16/Modules/main.c:357)</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>Py_BytesMain (:0) (4 samples, 100.00%)</title><rect x="10.0" y="197" width="1180.0" height="15.0" fill="rgb(246,117,117)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="207.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >Py_BytesMain (:0)</text>
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:112) (1 samples, 25.00%)</title><rect x="895.0" y="1509" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1519.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>_start (:0) (4 samples, 100.00%)</title><rect x="10.0" y="245" width="1180.0" height="15.0" fill="rgb(233,98,98)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="255.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_start (:0)</text>
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="1189" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1199.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>all (4 samples, 100%)</title><rect x="10.0" y="261" width="1180.0" height="15.0" fill="rgb(255,130,130)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="271.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  ></text>
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="821" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="831.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>__libc_start_call_main (./csu/../sysdeps/nptl/libc_start_call_main.h:58) (4 samples, 100.00%)</title><rect x="10.0" y="213" width="1180.0" height="15.0" fill="rgb(236,103,103)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="223.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__libc_start_call_main (./csu/../sysdeps/nptl/libc_start_call_main.h:58)</text>
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="709" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="719.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>pybind11::cpp_function::dispatcher(_object*, _object*, _object*) (:0) (4 samples, 100.00%)</title><rect x="10.0" y="101" width="1180.0" height="15.0" fill="rgb(224,224,68)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="111.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >pybind11::cpp_function::dispatcher(_object*, _object*, _object*) (:0)</text>
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="305.0" y="1413" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1423.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>__GI___clock_nanosleep (./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c:78) (4 samples, 100.00%)</title><rect x="10.0" y="37" width="1180.0" height="15.0" fill="rgb(228,91,91)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="47.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__GI___clock_nanosleep (./time/../sysdeps/unix/sysv/linux/clock_nanosleep.c:78)</text>
+<title>run_eval_code_obj (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:1291) (4 samples, 100.00%)</title><rect x="10.0" y="1573" width="1180.0" height="15.0" fill="rgb(237,104,104)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1583.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >run_eval_code_obj (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:1291)</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>add(int, int) (:0) (4 samples, 100.00%)</title><rect x="10.0" y="69" width="1180.0" height="15.0" fill="rgb(237,104,104)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="79.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >add(int, int) (:0)</text>
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="600.0" y="1381" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1391.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>_PyObject_MakeTpCall (:0) (4 samples, 100.00%)</title><rect x="10.0" y="117" width="1180.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="127.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_MakeTpCall (:0)</text>
+<title>_PyObject_FastCallDictTstate (/usr/local/src/conda/python-3.10.16/Objects/call.c:142) (1 samples, 25.00%)</title><rect x="10.0" y="1429" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1439.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_FastCallDictTstate (/usr/loca..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>void pybind11::cpp_function::initialize&lt;int (*&amp;)(int, int), int, int, int, pybind11::name, pybind11::scope, pybind11::sibling, char [33]&gt;(int (*&amp;)(int, int), int (*)(int, int), pybind11::name const, pybind11::scope&amp;, pybind11::sibling, char [33])::{lambda(pybind11::detail::function_call&amp;)#1}::operator()(pybind11::detail::function_call&amp;) const (:0) (4 samples, 100.00%)</title><rect x="10.0" y="85" width="1180.0" height="15.0" fill="rgb(206,206,61)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="95.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >void pybind11::cpp_function::initialize&lt;int (*&amp;)(int, int), int, int, int, pybind11::name, pybind11::scope, pybind11::sibling, char [33]&gt;(int (*&amp;)(int, int), int (*..</text>
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="629" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="639.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>Py_RunMain (:0) (4 samples, 100.00%)</title><rect x="10.0" y="181" width="1180.0" height="15.0" fill="rgb(246,117,117)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="191.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >Py_RunMain (:0)</text>
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="261" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="271.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>__libc_start_main_impl (./csu/../csu/libc-start.c:360) (4 samples, 100.00%)</title><rect x="10.0" y="229" width="1180.0" height="15.0" fill="rgb(236,103,103)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="239.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__libc_start_main_impl (./csu/../csu/libc-start.c:360)</text>
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="305.0" y="1493" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1503.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>_PyRun_SimpleFileObject (:0) (4 samples, 100.00%)</title><rect x="10.0" y="149" width="1180.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="159.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyRun_SimpleFileObject (:0)</text>
+<title>_PyObject_Call_Prepend (/usr/local/src/conda/python-3.10.16/Objects/call.c:431) (1 samples, 25.00%)</title><rect x="10.0" y="917" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="927.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_Call_Prepend (/usr/local/src/..</text>
 </g>
 <g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
-<title>_PyRun_AnyFileObject (:0) (4 samples, 100.00%)</title><rect x="10.0" y="165" width="1180.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
-<text text-anchor="" x="13.00" y="175.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyRun_AnyFileObject (:0)</text>
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="469" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="479.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>run_mod (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:1312) (4 samples, 100.00%)</title><rect x="10.0" y="1589" width="1180.0" height="15.0" fill="rgb(237,104,104)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1599.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >run_mod (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:1312)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="1285" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1295.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="613" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="623.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="421" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="431.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="1429" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1439.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="645" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="655.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="600.0" y="1541" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1551.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>method_vectorcall (/usr/local/src/conda/python-3.10.16/Objects/classobject.c:53) (1 samples, 25.00%)</title><rect x="600.0" y="1413" width="295.0" height="15.0" fill="rgb(229,92,92)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1423.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >method_vectorcall (/usr/local/src/conda..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>do_call_core (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5945) (1 samples, 25.00%)</title><rect x="10.0" y="1221" width="295.0" height="15.0" fill="rgb(245,115,115)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1231.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >do_call_core (/usr/local/src/conda/pyth..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>gc_collect_with_callback (/usr/local/src/conda/python-3.10.16/Modules/gcmodule.c:1413) (1 samples, 25.00%)</title><rect x="10.0" y="85" width="295.0" height="15.0" fill="rgb(240,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="95.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >gc_collect_with_callback (/usr/local/sr..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>torch::autograd::Engine::execute_with_graph_task(std::shared_ptr&lt;torch::autograd::GraphTask&gt; const&amp;, std::shared_ptr&lt;torch::autograd::Node&gt;, torch::autograd::InputBuffer&amp;&amp;) (:0) (1 samples, 25.00%)</title><rect x="305.0" y="1221" width="295.0" height="15.0" fill="rgb(212,212,63)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1231.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >torch::autograd::Engine::execute_with_g..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="693" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="703.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>method_vectorcall (/usr/local/src/conda/python-3.10.16/Objects/classobject.c:53) (1 samples, 25.00%)</title><rect x="895.0" y="1349" width="295.0" height="15.0" fill="rgb(229,92,92)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1359.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >method_vectorcall (/usr/local/src/conda..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="600.0" y="1173" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1183.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="741" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="751.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="600.0" y="1189" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1199.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="1237" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1247.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="1253" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1263.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>&lt;module&gt; (/home/yang/ddp/sinMmulCard.py:81) (1 samples, 25.00%)</title><rect x="895.0" y="1413" width="295.0" height="15.0" fill="rgb(94,240,94)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1423.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >&lt;module&gt; (/home/yang/ddp/sinMmulCard.py..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="1157" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1167.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>forward (/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/distributed.py:1156) (1 samples, 25.00%)</title><rect x="10.0" y="1317" width="295.0" height="15.0" fill="rgb(99,245,99)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1327.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >forward (/opt/conda/lib/python3.10/site..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="600.0" y="1461" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1471.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="869" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="879.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="600.0" y="1429" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1439.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="600.0" y="1253" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1263.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="1269" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1279.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="453" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="463.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Call (/usr/local/src/conda/python-3.10.16/Objects/call.c:317) (1 samples, 25.00%)</title><rect x="10.0" y="1205" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1215.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Call (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>THPEngine_run_backward(_object*, _object*, _object*) (:0) (1 samples, 25.00%)</title><rect x="305.0" y="1285" width="295.0" height="15.0" fill="rgb(233,99,99)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1295.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >THPEngine_run_backward(_object*, _objec..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_run_ddp_forward (/opt/conda/lib/python3.10/site-packages/torch/nn/parallel/distributed.py:1113) (1 samples, 25.00%)</title><rect x="10.0" y="1237" width="295.0" height="15.0" fill="rgb(86,233,86)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1247.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_run_ddp_forward (/opt/conda/lib/python..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="1349" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1359.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>THCPModule_cudaSynchronize(_object*, _object*) (:0) (1 samples, 25.00%)</title><rect x="600.0" y="1125" width="295.0" height="15.0" fill="rgb(234,100,100)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1135.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >THCPModule_cudaSynchronize(_object*, _o..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>slot_tp_call (/usr/local/src/conda/python-3.10.16/Objects/typeobject.c:7494) (1 samples, 25.00%)</title><rect x="10.0" y="1461" width="295.0" height="15.0" fill="rgb(232,96,96)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1471.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >slot_tp_call (/usr/local/src/conda/pyth..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_recurse_add_to_result (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:226) (1 samples, 25.00%)</title><rect x="895.0" y="741" width="295.0" height="15.0" fill="rgb(90,236,90)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="751.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_recurse_add_to_result (/opt/conda/lib/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>mem_stats (/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py:59) (1 samples, 25.00%)</title><rect x="10.0" y="597" width="295.0" height="15.0" fill="rgb(87,234,87)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="607.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >mem_stats (/opt/conda/lib/python3.10/si..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="600.0" y="1317" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1327.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>&lt;module&gt; (/home/yang/ddp/sinMmulCard.py:79) (1 samples, 25.00%)</title><rect x="10.0" y="1557" width="295.0" height="15.0" fill="rgb(94,240,94)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1567.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >&lt;module&gt; (/home/yang/ddp/sinMmulCard.py..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="600.0" y="1301" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1311.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="1525" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1535.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:99) (1 samples, 25.00%)</title><rect x="305.0" y="1349" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1359.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="325" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="335.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_Call (/usr/local/src/conda/python-3.10.16/Objects/call.c:305) (1 samples, 25.00%)</title><rect x="10.0" y="1189" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1199.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_Call (/usr/local/src/conda/py..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyRun_AnyFileObject (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:90) (4 samples, 100.00%)</title><rect x="10.0" y="1637" width="1180.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1647.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyRun_AnyFileObject (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:90)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:112) (1 samples, 25.00%)</title><rect x="10.0" y="965" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="975.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="305.0" y="1541" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1551.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_recurse_add_to_result (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:226) (1 samples, 25.00%)</title><rect x="10.0" y="277" width="295.0" height="15.0" fill="rgb(90,236,90)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="287.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_recurse_add_to_result (/opt/conda/lib/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="1317" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1327.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>slot_tp_call (/usr/local/src/conda/python-3.10.16/Objects/typeobject.c:7494) (1 samples, 25.00%)</title><rect x="10.0" y="1173" width="295.0" height="15.0" fill="rgb(232,96,96)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1183.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >slot_tp_call (/usr/local/src/conda/pyth..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="1013" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1023.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="1541" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1551.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="1173" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1183.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>update_refs (/usr/local/src/conda/python-3.10.16/Modules/gcmodule.c:426) (1 samples, 25.00%)</title><rect x="10.0" y="37" width="295.0" height="15.0" fill="rgb(236,102,102)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="47.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >update_refs (/usr/local/src/conda/pytho..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>dictiter_new (/usr/local/src/conda/python-3.10.16/Objects/dictobject.c:3656) (1 samples, 25.00%)</title><rect x="10.0" y="165" width="295.0" height="15.0" fill="rgb(245,116,116)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="175.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >dictiter_new (/usr/local/src/conda/pyth..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_GC_New (/usr/local/src/conda/python-3.10.16/Modules/gcmodule.c:2319) (1 samples, 25.00%)</title><rect x="10.0" y="149" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="159.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_GC_New (/usr/local/src/conda/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>do_call_core (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5945) (1 samples, 25.00%)</title><rect x="10.0" y="1093" width="295.0" height="15.0" fill="rgb(245,115,115)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1103.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >do_call_core (/usr/local/src/conda/pyth..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="305.0" y="1445" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1455.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>memory_stats (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:231) (1 samples, 25.00%)</title><rect x="10.0" y="437" width="295.0" height="15.0" fill="rgb(87,234,87)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="447.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >memory_stats (/opt/conda/lib/python3.10..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="1541" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1551.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>c10::cuda::device_synchronize() (:0) (1 samples, 25.00%)</title><rect x="600.0" y="1109" width="295.0" height="15.0" fill="rgb(206,206,61)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1119.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >c10::cuda::device_synchronize() (:0)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>do_call_core (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5945) (1 samples, 25.00%)</title><rect x="10.0" y="1381" width="295.0" height="15.0" fill="rgb(245,115,115)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1391.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >do_call_core (/usr/local/src/conda/pyth..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_call_impl (/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py:1538) (1 samples, 25.00%)</title><rect x="10.0" y="1109" width="295.0" height="15.0" fill="rgb(98,244,98)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1119.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_call_impl (/opt/conda/lib/python3.10/s..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="1045" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1055.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:112) (1 samples, 25.00%)</title><rect x="10.0" y="1493" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1503.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="600.0" y="1269" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1279.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="245" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="255.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="1413" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1423.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>post_step_hook (/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py:348) (1 samples, 25.00%)</title><rect x="600.0" y="1365" width="295.0" height="15.0" fill="rgb(98,244,98)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1375.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >post_step_hook (/opt/conda/lib/python3...</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="805" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="815.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="1333" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1343.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="1253" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1263.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>__cudart1050 (:0) (1 samples, 25.00%)</title><rect x="600.0" y="1077" width="295.0" height="15.0" fill="rgb(234,100,100)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1087.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__cudart1050 (:0)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="600.0" y="1397" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1407.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>max_memory_allocated (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:373) (1 samples, 25.00%)</title><rect x="895.0" y="981" width="295.0" height="15.0" fill="rgb(79,226,79)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="991.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >max_memory_allocated (/opt/conda/lib/py..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>pre_forward_hook (/opt/conda/lib/python3.10/site-packages/probing/profiling/types.py:38) (1 samples, 25.00%)</title><rect x="10.0" y="757" width="295.0" height="15.0" fill="rgb(96,242,96)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="767.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >pre_forward_hook (/opt/conda/lib/python..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="600.0" y="1157" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1167.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="853" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="863.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="305.0" y="1509" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1519.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>cfunction_vectorcall_NOARGS (/usr/local/src/conda/python-3.10.16/Objects/methodobject.c:489) (1 samples, 25.00%)</title><rect x="600.0" y="1141" width="295.0" height="15.0" fill="rgb(227,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1151.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >cfunction_vectorcall_NOARGS (/usr/local..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="997" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1007.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>torch::autograd::ReadyQueue::pop() (:0) (1 samples, 25.00%)</title><rect x="305.0" y="1189" width="295.0" height="15.0" fill="rgb(212,212,63)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1199.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >torch::autograd::ReadyQueue::pop() (:0)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>wrapper (/opt/conda/lib/python3.10/site-packages/torch/optim/optimizer.py:285) (1 samples, 25.00%)</title><rect x="600.0" y="1477" width="295.0" height="15.0" fill="rgb(85,232,85)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1487.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >wrapper (/opt/conda/lib/python3.10/site..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>Py_RunMain (/usr/local/src/conda/python-3.10.16/Modules/main.c:674) (4 samples, 100.00%)</title><rect x="10.0" y="1701" width="1180.0" height="15.0" fill="rgb(246,117,117)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1711.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >Py_RunMain (/usr/local/src/conda/python-3.10.16/Modules/main.c:674)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_GC_Alloc (/usr/local/src/conda/python-3.10.16/Modules/gcmodule.c:2297) (1 samples, 25.00%)</title><rect x="10.0" y="117" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="127.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_GC_Alloc (/usr/local/src/cond..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>log_module_stage (/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py:324) (1 samples, 25.00%)</title><rect x="10.0" y="677" width="295.0" height="15.0" fill="rgb(86,233,86)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="687.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >log_module_stage (/opt/conda/lib/python..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="773" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="783.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="725" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="735.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>pyrun_file (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:1208) (4 samples, 100.00%)</title><rect x="10.0" y="1605" width="1180.0" height="15.0" fill="rgb(246,117,117)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1615.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >pyrun_file (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:1208)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>mem_stats (/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py:59) (1 samples, 25.00%)</title><rect x="895.0" y="1061" width="295.0" height="15.0" fill="rgb(87,234,87)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1071.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >mem_stats (/opt/conda/lib/python3.10/si..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>memory_stats (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:231) (1 samples, 25.00%)</title><rect x="895.0" y="901" width="295.0" height="15.0" fill="rgb(87,234,87)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="911.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >memory_stats (/opt/conda/lib/python3.10..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="341" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="351.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="1333" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1343.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>pymain_run_python (/usr/local/src/conda/python-3.10.16/Modules/main.c:595) (4 samples, 100.00%)</title><rect x="10.0" y="1685" width="1180.0" height="15.0" fill="rgb(250,123,123)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1695.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >pymain_run_python (/usr/local/src/conda/python-3.10.16/Modules/main.c:595)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_GC_Malloc (/usr/local/src/conda/python-3.10.16/Modules/gcmodule.c:2307) (1 samples, 25.00%)</title><rect x="10.0" y="133" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="143.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_GC_Malloc (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_recurse_add_to_result (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:226) (1 samples, 25.00%)</title><rect x="10.0" y="357" width="295.0" height="15.0" fill="rgb(90,236,90)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="367.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_recurse_add_to_result (/opt/conda/lib/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>torch::autograd::Engine::execute(std::vector&lt;torch::autograd::Edge, std::allocator&lt;torch::autograd::Edge&gt; &gt; const&amp;, std::vector&lt;at::Tensor, std::allocator&lt;at::Tensor&gt; &gt; const&amp;, bool, bool, bool, std::vector&lt;torch::autograd::Edge, std::allocator&lt;torch::autograd::Edge&gt; &gt; const&amp;) (:0) (1 samples, 25.00%)</title><rect x="305.0" y="1253" width="295.0" height="15.0" fill="rgb(212,212,63)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1263.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >torch::autograd::Engine::execute(std::v..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="600.0" y="1221" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1231.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="305.0" y="1525" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1535.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>slot_tp_call (/usr/local/src/conda/python-3.10.16/Objects/typeobject.c:7494) (1 samples, 25.00%)</title><rect x="10.0" y="933" width="295.0" height="15.0" fill="rgb(232,96,96)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="943.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >slot_tp_call (/usr/local/src/conda/pyth..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>synchronize (/opt/conda/lib/python3.10/site-packages/torch/cuda/__init__.py:688) (1 samples, 25.00%)</title><rect x="600.0" y="1205" width="295.0" height="15.0" fill="rgb(97,243,97)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1215.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >synchronize (/opt/conda/lib/python3.10/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="600.0" y="1445" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1455.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="1109" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1119.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="1397" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1407.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="965" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="975.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="305.0" y="1365" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1375.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>backward (/opt/conda/lib/python3.10/site-packages/torch/_tensor.py:487) (1 samples, 25.00%)</title><rect x="305.0" y="1477" width="295.0" height="15.0" fill="rgb(78,226,78)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1487.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >backward (/opt/conda/lib/python3.10/sit..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="305.0" y="1381" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1391.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>gc_collect_main (/usr/local/src/conda/python-3.10.16/Modules/gcmodule.c:1239) (1 samples, 25.00%)</title><rect x="10.0" y="69" width="295.0" height="15.0" fill="rgb(240,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="79.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >gc_collect_main (/usr/local/src/conda/p..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_MakeTpCall (/usr/local/src/conda/python-3.10.16/Objects/call.c:215) (1 samples, 25.00%)</title><rect x="10.0" y="949" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="959.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_MakeTpCall (/usr/local/src/co..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_MakeTpCall (/usr/local/src/conda/python-3.10.16/Objects/call.c:215) (1 samples, 25.00%)</title><rect x="895.0" y="1493" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1503.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_MakeTpCall (/usr/local/src/co..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="917" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="927.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="565" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="575.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="600.0" y="1349" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1359.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>backward (/opt/conda/lib/python3.10/site-packages/torch/autograd/__init__.py:200) (1 samples, 25.00%)</title><rect x="305.0" y="1397" width="295.0" height="15.0" fill="rgb(78,226,78)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1407.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >backward (/opt/conda/lib/python3.10/sit..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>torch::autograd::Engine::thread_main(std::shared_ptr&lt;torch::autograd::GraphTask&gt; const&amp;) (:0) (1 samples, 25.00%)</title><rect x="305.0" y="1205" width="295.0" height="15.0" fill="rgb(212,212,63)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1215.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >torch::autograd::Engine::thread_main(st..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="789" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="799.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>Py_BytesMain (/usr/local/src/conda/python-3.10.16/Modules/main.c:1094) (4 samples, 100.00%)</title><rect x="10.0" y="1717" width="1180.0" height="15.0" fill="rgb(246,117,117)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1727.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >Py_BytesMain (/usr/local/src/conda/python-3.10.16/Modules/main.c:1094)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="600.0" y="1509" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1519.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>pymain_run_file (/usr/local/src/conda/python-3.10.16/Modules/main.c:376) (4 samples, 100.00%)</title><rect x="10.0" y="1669" width="1180.0" height="15.0" fill="rgb(250,123,123)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1679.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >pymain_run_file (/usr/local/src/conda/python-3.10.16/Modules/main.c:376)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="1125" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1135.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="305.0" y="1461" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1471.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_recurse_add_to_result (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:226) (1 samples, 25.00%)</title><rect x="895.0" y="661" width="295.0" height="15.0" fill="rgb(90,236,90)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="671.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_recurse_add_to_result (/opt/conda/lib/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_call_impl (/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py:1527) (1 samples, 25.00%)</title><rect x="895.0" y="1301" width="295.0" height="15.0" fill="rgb(98,244,98)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1311.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_call_impl (/opt/conda/lib/python3.10/s..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_GetIter (/usr/local/src/conda/python-3.10.16/Objects/abstract.c:2813) (1 samples, 25.00%)</title><rect x="10.0" y="181" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="191.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_GetIter (/usr/local/src/conda/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="373" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="383.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>method_vectorcall (/usr/local/src/conda/python-3.10.16/Objects/classobject.c:53) (1 samples, 25.00%)</title><rect x="10.0" y="805" width="295.0" height="15.0" fill="rgb(229,92,92)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="815.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >method_vectorcall (/usr/local/src/conda..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>method_vectorcall (/usr/local/src/conda/python-3.10.16/Objects/classobject.c:83) (1 samples, 25.00%)</title><rect x="10.0" y="1365" width="295.0" height="15.0" fill="rgb(229,92,92)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1375.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >method_vectorcall (/usr/local/src/conda..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>&lt;module&gt; (/home/yang/ddp/sinMmulCard.py:84) (1 samples, 25.00%)</title><rect x="600.0" y="1557" width="295.0" height="15.0" fill="rgb(94,240,94)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1567.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >&lt;module&gt; (/home/yang/ddp/sinMmulCard.py..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="997" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1007.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="885" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="895.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>gc_collect_generations (/usr/local/src/conda/python-3.10.16/Modules/gcmodule.c:1468) (1 samples, 25.00%)</title><rect x="10.0" y="101" width="295.0" height="15.0" fill="rgb(240,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="111.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >gc_collect_generations (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="600.0" y="1333" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1343.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="773" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="783.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="1125" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1135.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="1365" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1375.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>pre_forward_hook (/opt/conda/lib/python3.10/site-packages/probing/profiling/types.py:38) (1 samples, 25.00%)</title><rect x="895.0" y="1221" width="295.0" height="15.0" fill="rgb(96,242,96)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1231.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >pre_forward_hook (/opt/conda/lib/python..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_MakeTpCall (/usr/local/src/conda/python-3.10.16/Objects/call.c:215) (1 samples, 25.00%)</title><rect x="10.0" y="1477" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1487.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_MakeTpCall (/usr/local/src/co..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_recurse_add_to_result (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:225) (1 samples, 25.00%)</title><rect x="10.0" y="197" width="295.0" height="15.0" fill="rgb(90,236,90)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="207.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_recurse_add_to_result (/opt/conda/lib/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="229" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="239.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyRun_SimpleFileObject (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:456) (4 samples, 100.00%)</title><rect x="10.0" y="1621" width="1180.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1631.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyRun_SimpleFileObject (/usr/local/src/conda/python-3.10.16/Python/pythonrun.c:456)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>__pthread_cond_wait (/build/glibc-FcRMwW/glibc-2.31/nptl/pthread_cond_wait.c:647) (1 samples, 25.00%)</title><rect x="305.0" y="1157" width="295.0" height="15.0" fill="rgb(233,99,99)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1167.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__pthread_cond_wait (/build/glibc-FcRMw..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="1381" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1391.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_Call_Prepend (/usr/local/src/conda/python-3.10.16/Objects/call.c:431) (1 samples, 25.00%)</title><rect x="895.0" y="1461" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1471.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_Call_Prepend (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:99) (1 samples, 25.00%)</title><rect x="10.0" y="1509" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1519.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="305.0" y="1429" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1439.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="1029" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1039.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="757" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="767.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_call_impl (/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py:1527) (1 samples, 25.00%)</title><rect x="10.0" y="869" width="295.0" height="15.0" fill="rgb(98,244,98)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="879.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_call_impl (/opt/conda/lib/python3.10/s..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>cfunction_call (/usr/local/src/conda/python-3.10.16/Objects/methodobject.c:543) (1 samples, 25.00%)</title><rect x="305.0" y="1301" width="295.0" height="15.0" fill="rgb(227,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1311.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >cfunction_call (/usr/local/src/conda/py..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="1205" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1215.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_cuda_sync (/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py:363) (1 samples, 25.00%)</title><rect x="600.0" y="1285" width="295.0" height="15.0" fill="rgb(92,238,92)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1295.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_cuda_sync (/opt/conda/lib/python3.10/s..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="309" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="319.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="1061" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1071.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="1013" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1023.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="693" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="703.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_FastCallDictTstate (/usr/local/src/conda/python-3.10.16/Objects/call.c:142) (1 samples, 25.00%)</title><rect x="10.0" y="1141" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1151.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_FastCallDictTstate (/usr/loca..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>do_call_core (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5945) (1 samples, 25.00%)</title><rect x="10.0" y="1301" width="295.0" height="15.0" fill="rgb(245,115,115)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1311.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >do_call_core (/usr/local/src/conda/pyth..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="533" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="543.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="389" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="399.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>__libc_start_main (/build/glibc-FcRMwW/glibc-2.31/csu/../csu/libc-start.c:308) (4 samples, 100.00%)</title><rect x="10.0" y="1733" width="1180.0" height="15.0" fill="rgb(236,103,103)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1743.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__libc_start_main (/build/glibc-FcRMwW/glibc-2.31/csu/../csu/libc-start.c:308)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_call_impl (/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py:1538) (1 samples, 25.00%)</title><rect x="10.0" y="1397" width="295.0" height="15.0" fill="rgb(98,244,98)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1407.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_call_impl (/opt/conda/lib/python3.10/s..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="1093" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1103.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_FastCallDictTstate (/usr/local/src/conda/python-3.10.16/Objects/call.c:142) (1 samples, 25.00%)</title><rect x="895.0" y="1445" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1455.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_FastCallDictTstate (/usr/loca..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="885" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="895.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_FastCallDictTstate (/usr/local/src/conda/python-3.10.16/Objects/call.c:142) (1 samples, 25.00%)</title><rect x="10.0" y="901" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="911.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_FastCallDictTstate (/usr/loca..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>&lt;module&gt; (/home/yang/ddp/sinMmulCard.py:83) (1 samples, 25.00%)</title><rect x="305.0" y="1557" width="295.0" height="15.0" fill="rgb(94,240,94)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1567.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >&lt;module&gt; (/home/yang/ddp/sinMmulCard.py..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="837" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="847.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="949" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="959.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="600.0" y="1237" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1247.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="677" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="687.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="725" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="735.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="293" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="303.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:99) (1 samples, 25.00%)</title><rect x="895.0" y="1525" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1535.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>torch::autograd::python::PythonEngine::execute(std::vector&lt;torch::autograd::Edge, std::allocator&lt;torch::autograd::Edge&gt; &gt; const&amp;, std::vector&lt;at::Tensor, std::allocator&lt;at::Tensor&gt; &gt; const&amp;, bool, bool, bool, std::vector&lt;torch::autograd::Edge, std::allocator&lt;torch::autograd::Edge&gt; &gt; const&amp;) (:0) (1 samples, 25.00%)</title><rect x="305.0" y="1269" width="295.0" height="15.0" fill="rgb(212,212,63)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1279.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >torch::autograd::python::PythonEngine::..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="549" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="559.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>method_vectorcall (/usr/local/src/conda/python-3.10.16/Objects/classobject.c:83) (1 samples, 25.00%)</title><rect x="10.0" y="1285" width="295.0" height="15.0" fill="rgb(229,92,92)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1295.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >method_vectorcall (/usr/local/src/conda..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="895.0" y="933" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="943.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>forward (/home/yang/ddp/sinMmulCard.py:34) (1 samples, 25.00%)</title><rect x="10.0" y="1029" width="295.0" height="15.0" fill="rgb(99,245,99)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1039.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >forward (/home/yang/ddp/sinMmulCard.py:..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:114) (1 samples, 25.00%)</title><rect x="10.0" y="789" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="799.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>all (4 samples, 100%)</title><rect x="10.0" y="1749" width="1180.0" height="15.0" fill="rgb(255,130,130)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1759.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  ></text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_MakeTpCall (/usr/local/src/conda/python-3.10.16/Objects/call.c:215) (1 samples, 25.00%)</title><rect x="305.0" y="1317" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1327.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_MakeTpCall (/usr/local/src/co..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="581" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="591.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>slot_tp_call (/usr/local/src/conda/python-3.10.16/Objects/typeobject.c:7494) (1 samples, 25.00%)</title><rect x="895.0" y="1477" width="295.0" height="15.0" fill="rgb(232,96,96)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1487.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >slot_tp_call (/usr/local/src/conda/pyth..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>deduce_unreachable (/usr/local/src/conda/python-3.10.16/Modules/gcmodule.c:1104) (1 samples, 25.00%)</title><rect x="10.0" y="53" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="63.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >deduce_unreachable (/usr/local/src/cond..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>futex_wait_cancelable (/build/glibc-FcRMwW/glibc-2.31/nptl/../sysdeps/nptl/futex-internal.h:183) (1 samples, 25.00%)</title><rect x="305.0" y="1125" width="295.0" height="15.0" fill="rgb(236,103,103)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1135.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >futex_wait_cancelable (/build/glibc-FcR..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>__pthread_cond_wait_common (/build/glibc-FcRMwW/glibc-2.31/nptl/pthread_cond_wait.c:508) (1 samples, 25.00%)</title><rect x="305.0" y="1141" width="295.0" height="15.0" fill="rgb(233,99,99)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1151.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__pthread_cond_wait_common (/build/glib..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="600.0" y="1493" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1503.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="837" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="847.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="405" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="415.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>cudaDeviceSynchronize (:0) (1 samples, 25.00%)</title><rect x="600.0" y="1093" width="295.0" height="15.0" fill="rgb(226,88,88)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1103.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >cudaDeviceSynchronize (:0)</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="501" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="511.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>max_memory_allocated (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:373) (1 samples, 25.00%)</title><rect x="10.0" y="517" width="295.0" height="15.0" fill="rgb(79,226,79)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="527.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >max_memory_allocated (/opt/conda/lib/py..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="1045" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1055.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>torch::autograd::python::PythonEngine::execute_with_graph_task(std::shared_ptr&lt;torch::autograd::GraphTask&gt; const&amp;, std::shared_ptr&lt;torch::autograd::Node&gt;, torch::autograd::InputBuffer&amp;&amp;) (:0) (1 samples, 25.00%)</title><rect x="305.0" y="1237" width="295.0" height="15.0" fill="rgb(212,212,63)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1247.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >torch::autograd::python::PythonEngine::..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="895.0" y="1557" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1567.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="600.0" y="1525" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="603.00" y="1535.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>std::condition_variable::wait(std::unique_lock&lt;std::mutex&gt;&amp;) (:0) (1 samples, 25.00%)</title><rect x="305.0" y="1173" width="295.0" height="15.0" fill="rgb(210,210,62)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1183.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >std::condition_variable::wait(std::uniq..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="853" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="863.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:112) (1 samples, 25.00%)</title><rect x="305.0" y="1333" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="308.00" y="1343.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="895.0" y="1077" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1087.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>method_vectorcall (/usr/local/src/conda/python-3.10.16/Objects/classobject.c:83) (1 samples, 25.00%)</title><rect x="10.0" y="1077" width="295.0" height="15.0" fill="rgb(229,92,92)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1087.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >method_vectorcall (/usr/local/src/conda..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyFunction_Vectorcall (/usr/local/src/conda/python-3.10.16/Objects/call.c:342) (1 samples, 25.00%)</title><rect x="10.0" y="213" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="223.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyFunction_Vectorcall (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_Call_Prepend (/usr/local/src/conda/python-3.10.16/Objects/call.c:431) (1 samples, 25.00%)</title><rect x="10.0" y="1445" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1455.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_Call_Prepend (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="895.0" y="1269" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1279.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>call_function (/usr/local/src/conda/python-3.10.16/Python/ceval.c:5893) (1 samples, 25.00%)</title><rect x="10.0" y="661" width="295.0" height="15.0" fill="rgb(226,89,89)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="671.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >call_function (/usr/local/src/conda/pyt..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>PyObject_Vectorcall (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:123) (1 samples, 25.00%)</title><rect x="10.0" y="485" width="295.0" height="15.0" fill="rgb(249,122,122)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="495.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >PyObject_Vectorcall (/usr/local/src/con..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_VectorcallTstate (/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h:99) (1 samples, 25.00%)</title><rect x="10.0" y="981" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="991.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_VectorcallTstate (/usr/local/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_PyObject_Call_Prepend (/usr/local/src/conda/python-3.10.16/Objects/call.c:431) (1 samples, 25.00%)</title><rect x="10.0" y="1157" width="295.0" height="15.0" fill="rgb(241,109,109)" rx="2" ry="2" />
+<text text-anchor="" x="13.00" y="1167.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_PyObject_Call_Prepend (/usr/local/src/..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>log_module_stage (/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py:324) (1 samples, 25.00%)</title><rect x="895.0" y="1141" width="295.0" height="15.0" fill="rgb(86,233,86)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="1151.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >log_module_stage (/opt/conda/lib/python..</text>
+</g>
+<g class="func_g" onmouseover="s(this)" onmouseout="c()" onclick="zoom(this)">
+<title>_recurse_add_to_result (/opt/conda/lib/python3.10/site-packages/torch/cuda/memory.py:226) (1 samples, 25.00%)</title><rect x="895.0" y="821" width="295.0" height="15.0" fill="rgb(90,236,90)" rx="2" ry="2" />
+<text text-anchor="" x="898.00" y="831.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >_recurse_add_to_result (/opt/conda/lib/..</text>
 </g>
 </svg>
