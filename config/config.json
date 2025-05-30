@@ -1,9 +1,9 @@
 {
     "endpoints": [
         "http://10.107.204.71:12349/apis/pythonext/callstack",
-        "http://10.107.204.71:12349/apis/pythonext/callstack",
-        "http://10.107.204.71:12349/apis/pythonext/callstack",
-        "http://10.107.204.71:12349/apis/pythonext/callstack"
+        "http://10.107.204.71:12348/apis/pythonext/callstack",
+        "http://10.107.204.71:12347/apis/pythonext/callstack",
+        "http://10.107.204.71:12346/apis/pythonext/callstack"
     ],
     "timeout": 15,
     "max_workers": 8,
