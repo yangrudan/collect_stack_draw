@@ -1,0 +1,4 @@
+main;func1;func2;func3@0|1-3
+main;func1;func2;func4@1|0/2-3
+main;func1;func3;func5@2|0-1/3
+main;func1;func3;func6@3|0-2
