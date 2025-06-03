@@ -2,8 +2,12 @@ import json
 import logging
 import subprocess
 
+import os
 import sys
 sys.path.append(".")
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+target_subdir = 'debug'
+target_dir = os.path.join(project_root, target_subdir)
 
 from tire_stack import merge_stacks
 
@@ -103,8 +107,17 @@ if __name__ == "__main__":
     # generator = FlameGraphGenerator(input_json="./tmp/output.json", output_file="./tmp/stacks.txt")
     # generator.generate_flamegraph("./tmp/flamegraph.svg")    
 
-    generator = FlameGraphGenerator(input_json="./debug_4ranks_stack_data.json", 
-                                    output_file="./debug_4stacks.txt")
-    generator.generate_flamegraph("./debug_flamegraph_4ranks.svg")  
+    # generator = FlameGraphGenerator(input_json="./debug_4ranks_stack_data.json", 
+    #                                 output_file="./debug_4stacks.txt")
+    # generator.generate_flamegraph("./debug_flamegraph_4ranks.svg")  
+
+    
+    target_json_path = os.path.join(target_dir, 'debug_4ranks_stack_data.json')
+    target_txt_path = os.path.join(target_dir, 'debug_4stacks.txt')
+    target_svg_path = os.path.join(target_dir, 'debug_flamegraph_4ranks.svg')
+    generator = FlameGraphGenerator(input_json=target_json_path, 
+                                    output_file=target_txt_path)
+    generator.generate_flamegraph(target_svg_path)  
+
 
     
