@@ -97,3 +97,5 @@ if __name__ == "__main__":
     # generator = FlameGraphGenerator(input_json="./debug_4ranks_stack_data.json", 
     #                                 output_file="./debug_4stacks.txt")
     # generator.generate_flamegraph("./debug_flamegraph_4ranks.svg")  
+
+    

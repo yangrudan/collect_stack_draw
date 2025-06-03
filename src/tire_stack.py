@@ -68,14 +68,37 @@ def merge_stacks(stacks):
         trie.insert(stack_frames, rank)
     return trie
 
+def read_file_to_list(file_path):
+    """
+    读取文件，将每一行作为列表的一个元素。
+    :param file_path: 文件路径
+    :return: 包含文件每一行内容的列表
+    """
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            lines = file.readlines()  # 读取所有行
+            lines = [line.strip() for line in lines]  # 去除每行的首尾空白字符
+        return lines
+    except FileNotFoundError:
+        print(f"文件未找到: {file_path}")
+        return []
+    except Exception as e:
+        print(f"读取文件时发生错误: {e}")
+        return []
+
+
+
+
 def main():
     # 示例输入：每行表示一个rank的堆栈信息
-    stacks = [
-        "main;func1;func2;func3",
-        "main;func1;func2;func4",
-        "main;func1;func3;func5",
-        "main;func1;func3;func6"
-    ]
+    # stacks = [
+    #     "main;func1;func2;func3",
+    #     "main;func1;func2;func4",
+    #     "main;func1;func3;func5",
+    #     "main;func1;func3;func6"
+    # ]
+    file_path = "debug_4stacks copy.txt" 
+    stacks = read_file_to_list(file_path)
 
     trie = merge_stacks(stacks)
 
