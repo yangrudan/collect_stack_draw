@@ -1,14 +1,16 @@
 class TrieNode:
     def __init__(self):
         self.children = {}
+        self.is_end_of_stack = False
         self.ranks = set()
 
     def add_rank(self, rank):
         self.ranks.add(rank)
 
 class StackTrie:
-    def __init__(self):
+    def __init__(self,all_ranks):
         self.root = TrieNode()
+        self.all_ranks = all_ranks
 
     def insert(self, stack, rank):
         node = self.root
@@ -17,11 +19,12 @@ class StackTrie:
                 node.children[frame] = TrieNode()
             node = node.children[frame]
             node.add_rank(rank)
+        node.is_end_of_stack = True
         node.add_rank(rank)
 
-    def _format_rank_str(self, ranks, all_ranks):
+    def _format_rank_str(self, ranks):
         ranks = sorted(ranks)
-        leak_ranks = sorted(all_ranks - set(ranks))  # 将 ranks 转换为集合
+        leak_ranks = sorted(self.all_ranks - set(ranks))  # 将 ranks 转换为集合
 
         def _inner_format(ranks):
             str_buf = []
@@ -48,21 +51,20 @@ class StackTrie:
         leak_stack_ranks = _inner_format(leak_ranks)
         return f"@{'|'.join([has_stack_ranks, leak_stack_ranks])}"
 
-    def _traverse_with_all_stack(self, node, path, all_ranks):
+    def _traverse_with_all_stack(self, node, path):
         for frame, child in node.children.items():
-            rank_str = self._format_rank_str(child.ranks, all_ranks)
-            if child.children:
-                yield from self._traverse_with_all_stack(child, path + [frame], all_ranks)
-            else:
+            rank_str = self._format_rank_str(child.ranks)
+            if child.is_end_of_stack:
                 yield ";".join(path + [frame]) + rank_str
+            frame += rank_str
+            yield from self._traverse_with_all_stack(child, path + [frame])
 
     def __iter__(self):
-        yield from self._traverse_with_all_stack(self.root, [], self.all_ranks)
+        yield from self._traverse_with_all_stack(self.root, [])
 
 def merge_stacks(stacks):
-    trie = StackTrie()
     all_ranks = set(range(len(stacks)))
-    trie.all_ranks = all_ranks
+    trie = StackTrie(all_ranks)
     for rank, stack in enumerate(stacks):
         stack_frames = stack.split(";")
         trie.insert(stack_frames, rank)
@@ -90,22 +92,21 @@ def read_file_to_list(file_path):
 
 
 def main():
-    # 示例输入：每行表示一个rank的堆栈信息
-    # stacks = [
-    #     "main;func1;func2;func3",
-    #     "main;func1;func2;func4",
-    #     "main;func1;func3;func5",
-    #     "main;func1;func3;func6"
-    # ]
-    file_path = "debug_4stacks copy.txt" 
-    stacks = read_file_to_list(file_path)
+    stacks = [
+         "main;func1;func2;func3",
+         "main;func1;func2;func4",
+         "main;func1;func3;func5",
+         "main;func1;func3;func6"
+    ]
 
     trie = merge_stacks(stacks)
 
     # 输出合并后的堆栈信息
     with open("merged_stacks.txt", "w") as f:
         for stack in trie:
-            f.write(f"{stack}\n")
+            f.write(f"{stack} 1\n")
 
 if __name__ == "__main__":
     main()
+    
+# /home/yang/Downloads/FlameGraph-1.0/flamegraph.pl merged_stacks.txt > mmm.svg
