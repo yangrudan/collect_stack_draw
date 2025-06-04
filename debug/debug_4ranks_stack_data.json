@@ -1,0 +1,3054 @@
+[
+    [
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py",
+                "func": "mem_stats",
+                "lineno": 56,
+                "locals": {
+                    "torch": {
+                        "id": 140299260811824,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch' from '/opt/conda/lib/python3.10/site-packages/torch/__init__.py'>"
+                    },
+                    "MB": {
+                        "id": 140296556171856,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "1048576"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py",
+                "func": "log_module_stage",
+                "lineno": 324,
+                "locals": {
+                    "self": {
+                        "id": 140296554535408,
+                        "class": "probing.profiling.torch_probe.TorchProbe",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<probing.profiling.torch_probe.TorchProbe object at 0x7f99564bd9f0>"
+                    },
+                    "stage": {
+                        "id": 140296554918704,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "pre forward"
+                    },
+                    "mod": {
+                        "id": 140296558277440,
+                        "class": "torch.nn.parallel.distributed.DistributedDataParallel",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "DistributedDataParallel(\n  (module): Model(\n    (conv2d): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1))\n    (fc): Linear(in_features=14400, out_fea"
+                    },
+                    "force": {
+                        "id": 7677632,
+                        "class": "builtins.bool",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "False"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/probing/profiling/types.py",
+                "func": "pre_forward_hook",
+                "lineno": 38,
+                "locals": {
+                    "self": {
+                        "id": 140296554535408,
+                        "class": "probing.profiling.torch_probe.TorchProbe",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<probing.profiling.torch_probe.TorchProbe object at 0x7f99564bd9f0>"
+                    },
+                    "m": {
+                        "id": 140296558277440,
+                        "class": "torch.nn.parallel.distributed.DistributedDataParallel",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "DistributedDataParallel(\n  (module): Model(\n    (conv2d): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1))\n    (fc): Linear(in_features=14400, out_fea"
+                    },
+                    "i": {
+                        "id": 140299260902464,
+                        "class": "builtins.tuple",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "(tensor([[[[-0.2445, -1.1878,  0.3561,  ...,  0.8157, -1.7654, -0.8161],\n          [ 0.5409, -1.7218, -0.9433,  ...,  1.1773,  0.4476,  0.3170],\n     "
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+                "func": "method_vectorcall",
+                "lineno": 53
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py",
+                "func": "_call_impl",
+                "lineno": 1527,
+                "locals": {
+                    "forward_call": {
+                        "id": 140294857802944,
+                        "class": "builtins.method",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<bound method DistributedDataParallel.forward of DistributedDataParallel(\n  (module): Model(\n    (conv2d): Conv2d(3, 16, kernel_size=(3, 3), stride=(1"
+                    },
+                    "hook": {
+                        "id": 140296559252288,
+                        "class": "builtins.method",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<bound method BaseTracer.pre_forward_hook of <probing.profiling.torch_probe.TorchProbe object at 0x7f99564bd9f0>>"
+                    },
+                    "self": {
+                        "id": 140296558277440,
+                        "class": "torch.nn.parallel.distributed.DistributedDataParallel",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "DistributedDataParallel(\n  (module): Model(\n    (conv2d): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1))\n    (fc): Linear(in_features=14400, out_fea"
+                    },
+                    "non_full_backward_hooks": {
+                        "id": 140294822641920,
+                        "class": "builtins.list",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "[]"
+                    },
+                    "full_backward_hooks": {
+                        "id": 140294857804736,
+                        "class": "builtins.list",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "[]"
+                    },
+                    "backward_pre_hooks": {
+                        "id": 140294857217472,
+                        "class": "builtins.list",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "[]"
+                    },
+                    "hook_id": {
+                        "id": 140299318280496,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "3"
+                    },
+                    "args": {
+                        "id": 140299260902464,
+                        "class": "builtins.tuple",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "(tensor([[[[-0.2445, -1.1878,  0.3561,  ...,  0.8157, -1.7654, -0.8161],\n          [ 0.5409, -1.7218, -0.9433,  ...,  1.1773,  0.4476,  0.3170],\n     "
+                    },
+                    "kwargs": {
+                        "id": 140296194773056,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f67cd",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f67cd",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyObject_FastCallDictTstate",
+                "lineno": 142
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x507f66",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyObject_Call_Prepend",
+                "lineno": 431
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5d0153",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/typeobject.c",
+                "func": "slot_tp_call",
+                "lineno": 7494
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f747b",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyObject_MakeTpCall",
+                "lineno": 215
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2f0e",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 112
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2f0e",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 99
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2f0e",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2f0e",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/home/yang/ddp/sinMmulCard.py",
+                "func": "<module>",
+                "lineno": 80,
+                "locals": {
+                    "__loader__": {
+                        "id": 140299317367600,
+                        "class": "_frozen_importlib_external.SourceFileLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7f99faf95330>"
+                    },
+                    "__spec__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "optimizer": {
+                        "id": 140296558277056,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "os": {
+                        "id": 140299317528112,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'os' from '/opt/conda/lib/python3.10/os.py'>"
+                    },
+                    "argparse": {
+                        "id": 140296556980288,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'argparse' from '/opt/conda/lib/python3.10/argparse.py'>"
+                    },
+                    "images": {
+                        "id": 140296555607632,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64, 3, 32, 32])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:1",
+                        "value": "tensor([[[[-0.2445, -1.1878,  0.3561,  ...,  0.8157, -1.7654, -0.8161],\n          [ 0.5409, -1.7218, -0.9433,  ...,  1.1773,  0.4476,  0.3170],\n      "
+                    },
+                    "epoch": {
+                        "id": 140294858172560,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "5819"
+                    },
+                    "__cached__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "loader": {
+                        "id": 140299260894688,
+                        "class": "torch.utils.data.dataloader.DataLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<torch.utils.data.dataloader.DataLoader object at 0x7f99f79b9de0>"
+                    },
+                    "__doc__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "SGD": {
+                        "id": 82305232,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.optim.sgd.SGD'>"
+                    },
+                    "config": {
+                        "id": 140296554534448,
+                        "class": "argparse.Namespace",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "Namespace(gpu_id='0,1,2,3', batchSize=64, epochs=5000000, dataset_size=1024, num_classes=10)"
+                    },
+                    "__file__": {
+                        "id": 140299317425408,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "/home/yang/ddp/sinMmulCard.py"
+                    },
+                    "dataset": {
+                        "id": 140296554535504,
+                        "class": "__main__.RandomDataset",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<__main__.RandomDataset object at 0x7f99564bda50>"
+                    },
+                    "__name__": {
+                        "id": 140299317501488,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "__main__"
+                    },
+                    "sampler": {
+                        "id": 140299260902272,
+                        "class": "torch.utils.data.distributed.DistributedSampler",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<torch.utils.data.distributed.DistributedSampler object at 0x7f99f79bbb80>"
+                    },
+                    "__builtins__": {
+                        "id": 140299318905088,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'builtins' (built-in)>"
+                    },
+                    "loss": {
+                        "id": 140294857675040,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:1",
+                        "value": "tensor(1.4612, device='cuda:1', grad_fn=<NllLossBackward0>)"
+                    },
+                    "Variable": {
+                        "id": 79919744,
+                        "class": "torch.autograd.variable.VariableMeta",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.autograd.variable.Variable'>"
+                    },
+                    "labels": {
+                        "id": 140296585682576,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64])",
+                        "dtype": "torch.int64",
+                        "device": "cuda:1",
+                        "value": "tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,"
+                    },
+                    "DistributedSampler": {
+                        "id": 84752752,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.distributed.DistributedSampler'>"
+                    },
+                    "DataLoader": {
+                        "id": 84736464,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.dataloader.DataLoader'>"
+                    },
+                    "nn": {
+                        "id": 140298805602368,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch.nn' from '/opt/conda/lib/python3.10/site-packages/torch/nn/__init__.py'>"
+                    },
+                    "RandomDataset": {
+                        "id": 87112016,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class '__main__.RandomDataset'>"
+                    },
+                    "Model": {
+                        "id": 87124448,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class '__main__.Model'>"
+                    },
+                    "local_rank": {
+                        "id": 140299318280432,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "1"
+                    },
+                    "step": {
+                        "id": 140299318280464,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "2"
+                    },
+                    "device": {
+                        "id": 140296556170800,
+                        "class": "torch.device",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "cuda:1"
+                    },
+                    "Dataset": {
+                        "id": 84428528,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.dataset.Dataset'>"
+                    },
+                    "model": {
+                        "id": 140296558277440,
+                        "class": "torch.nn.parallel.distributed.DistributedDataParallel",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "DistributedDataParallel(\n  (module): Model(\n    (conv2d): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1))\n    (fc): Linear(in_features=14400, out_fea"
+                    },
+                    "loss_func": {
+                        "id": 140299260902032,
+                        "class": "torch.nn.modules.loss.CrossEntropyLoss",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "CrossEntropyLoss()"
+                    },
+                    "__annotations__": {
+                        "id": 140299317501568,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "torch": {
+                        "id": 140299260811824,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch' from '/opt/conda/lib/python3.10/site-packages/torch/__init__.py'>"
+                    },
+                    "preds": {
+                        "id": 140296193412288,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64, 10])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:1",
+                        "value": "tensor([[1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n"
+                    },
+                    "__package__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "parser": {
+                        "id": 140299260902320,
+                        "class": "argparse.ArgumentParser",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "ArgumentParser(prog='sinMmulCard.py', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_he"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5c6737",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "run_eval_code_obj",
+                "lineno": 1291
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5c1870",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "run_mod",
+                "lineno": 1312
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x459839",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "pyrun_file",
+                "lineno": 1208
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5bbdff",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "_PyRun_SimpleFileObject",
+                "lineno": 456
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5bbb63",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "_PyRun_AnyFileObject",
+                "lineno": 90
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_file_obj",
+                "lineno": 357
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_file",
+                "lineno": 376
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_python",
+                "lineno": 595
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "Py_RunMain",
+                "lineno": 674
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5885d9",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "Py_BytesMain",
+                "lineno": 1094
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7f99fb1cb083",
+                "file": "/build/glibc-FcRMwW/glibc-2.31/csu/../csu/libc-start.c",
+                "func": "__libc_start_main",
+                "lineno": 308
+            }
+        }
+    ],
+    [
+        {
+            "CFrame": {
+                "ip": "0x7ff9e05f03c9",
+                "file": "",
+                "func": "__cudart1050",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7ff9e0629905",
+                "file": "",
+                "func": "cudaDeviceSynchronize",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7ff9e05e1fd4",
+                "file": "",
+                "func": "c10::cuda::device_synchronize()",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7ff9da7fe438",
+                "file": "",
+                "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fbc95",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+                "func": "cfunction_vectorcall_NOARGS",
+                "lineno": 489
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/torch/cuda/__init__.py",
+                "func": "synchronize",
+                "lineno": 688,
+                "locals": {
+                    "device": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py",
+                "func": "_cuda_sync",
+                "lineno": 363,
+                "locals": {
+                    "torch": {
+                        "id": 140711227546240,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch' from '/opt/conda/lib/python3.10/site-packages/torch/__init__.py'>"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py",
+                "func": "post_step_hook",
+                "lineno": 348,
+                "locals": {
+                    "self": {
+                        "id": 140708520925632,
+                        "class": "probing.profiling.torch_probe.TorchProbe",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<probing.profiling.torch_probe.TorchProbe object at 0x7ff9416819c0>"
+                    },
+                    "kwargs": {
+                        "id": 140706850018304,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "opt": {
+                        "id": 140708524650896,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "__class__": {
+                        "id": 3366948512,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'probing.profiling.torch_probe.TorchProbe'>"
+                    },
+                    "args": {
+                        "id": 140711227629120,
+                        "class": "builtins.tuple",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "(SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: "
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+                "func": "method_vectorcall",
+                "lineno": 53
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/torch/optim/optimizer.py",
+                "func": "wrapper",
+                "lineno": 285,
+                "locals": {
+                    "func": {
+                        "id": 140710914405088,
+                        "class": "builtins.function",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<function _use_grad_for_differentiable.<locals>._use_grad at 0x7ff9d011b2e0>"
+                    },
+                    "profile_name": {
+                        "id": 140706851217904,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "Optimizer.step#SGD.step"
+                    },
+                    "self": {
+                        "id": 140708524650896,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "result": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "pre_hook": {
+                        "id": 140708551437120,
+                        "class": "builtins.method",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<bound method BaseTracer.pre_step_hook of <probing.profiling.torch_probe.TorchProbe object at 0x7ff9416819c0>>"
+                    },
+                    "out": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "kwargs": {
+                        "id": 140706850018304,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "_": {
+                        "id": 140708231524032,
+                        "class": "builtins.list",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "[]"
+                    },
+                    "post_hook": {
+                        "id": 140708545118848,
+                        "class": "builtins.method",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<bound method TorchProbe.post_step_hook of <probing.profiling.torch_probe.TorchProbe object at 0x7ff9416819c0>>"
+                    },
+                    "args": {
+                        "id": 140711227629120,
+                        "class": "builtins.tuple",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "(SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: "
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/home/yang/ddp/sinMmulCard.py",
+                "func": "<module>",
+                "lineno": 85,
+                "locals": {
+                    "__file__": {
+                        "id": 140711284176128,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "/home/yang/ddp/sinMmulCard.py"
+                    },
+                    "loss_func": {
+                        "id": 140711227636368,
+                        "class": "torch.nn.modules.loss.CrossEntropyLoss",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "CrossEntropyLoss()"
+                    },
+                    "preds": {
+                        "id": 140706847870864,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64, 10])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:2",
+                        "value": "tensor([[1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n"
+                    },
+                    "DistributedSampler": {
+                        "id": 85183152,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.distributed.DistributedSampler'>"
+                    },
+                    "Dataset": {
+                        "id": 84858928,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.dataset.Dataset'>"
+                    },
+                    "__cached__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "torch": {
+                        "id": 140711227546240,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch' from '/opt/conda/lib/python3.10/site-packages/torch/__init__.py'>"
+                    },
+                    "argparse": {
+                        "id": 140708523370400,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'argparse' from '/opt/conda/lib/python3.10/argparse.py'>"
+                    },
+                    "DataLoader": {
+                        "id": 85166864,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.dataloader.DataLoader'>"
+                    },
+                    "__package__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "config": {
+                        "id": 140708520924672,
+                        "class": "argparse.Namespace",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "Namespace(gpu_id='0,1,2,3', batchSize=64, epochs=5000000, dataset_size=1024, num_classes=10)"
+                    },
+                    "optimizer": {
+                        "id": 140708524650896,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "loss": {
+                        "id": 140706851225360,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:2",
+                        "value": "tensor(1.4612, device='cuda:2', grad_fn=<NllLossBackward0>)"
+                    },
+                    "sampler": {
+                        "id": 140711227636608,
+                        "class": "torch.utils.data.distributed.DistributedSampler",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<torch.utils.data.distributed.DistributedSampler object at 0x7ff9e2bd3b80>"
+                    },
+                    "step": {
+                        "id": 140711285031184,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "2"
+                    },
+                    "local_rank": {
+                        "id": 140711285031184,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "2"
+                    },
+                    "__spec__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "loader": {
+                        "id": 140711227629024,
+                        "class": "torch.utils.data.dataloader.DataLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<torch.utils.data.dataloader.DataLoader object at 0x7ff9e2bd1de0>"
+                    },
+                    "epoch": {
+                        "id": 140708231408784,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "5819"
+                    },
+                    "__builtins__": {
+                        "id": 140711285655808,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'builtins' (built-in)>"
+                    },
+                    "Model": {
+                        "id": 87549968,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class '__main__.Model'>"
+                    },
+                    "os": {
+                        "id": 140711284278832,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'os' from '/opt/conda/lib/python3.10/os.py'>"
+                    },
+                    "__annotations__": {
+                        "id": 140711284252288,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "__doc__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "nn": {
+                        "id": 140711052290672,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch.nn' from '/opt/conda/lib/python3.10/site-packages/torch/nn/__init__.py'>"
+                    },
+                    "SGD": {
+                        "id": 82735520,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.optim.sgd.SGD'>"
+                    },
+                    "RandomDataset": {
+                        "id": 87537536,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class '__main__.RandomDataset'>"
+                    },
+                    "parser": {
+                        "id": 140711227636656,
+                        "class": "argparse.ArgumentParser",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "ArgumentParser(prog='sinMmulCard.py', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_he"
+                    },
+                    "dataset": {
+                        "id": 140708520925728,
+                        "class": "__main__.RandomDataset",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<__main__.RandomDataset object at 0x7ff941681a20>"
+                    },
+                    "Variable": {
+                        "id": 80348544,
+                        "class": "torch.autograd.variable.VariableMeta",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.autograd.variable.Variable'>"
+                    },
+                    "model": {
+                        "id": 140708524651280,
+                        "class": "torch.nn.parallel.distributed.DistributedDataParallel",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "DistributedDataParallel(\n  (module): Model(\n    (conv2d): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1))\n    (fc): Linear(in_features=14400, out_fea"
+                    },
+                    "__name__": {
+                        "id": 140711284252208,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "__main__"
+                    },
+                    "device": {
+                        "id": 140708522561104,
+                        "class": "torch.device",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "cuda:2"
+                    },
+                    "__loader__": {
+                        "id": 140711284118320,
+                        "class": "_frozen_importlib_external.SourceFileLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7ff9e61b1330>"
+                    },
+                    "images": {
+                        "id": 140708551291856,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64, 3, 32, 32])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:2",
+                        "value": "tensor([[[[ 1.1954,  0.5947,  0.1949,  ...,  1.4446,  0.0407,  1.1270],\n          [-0.5748,  0.9415,  0.2981,  ...,  0.8186,  2.0296,  0.7433],\n      "
+                    },
+                    "labels": {
+                        "id": 140708551925152,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64])",
+                        "dtype": "torch.int64",
+                        "device": "cuda:2",
+                        "value": "tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5c6737",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "run_eval_code_obj",
+                "lineno": 1291
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5c1870",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "run_mod",
+                "lineno": 1312
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x459839",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "pyrun_file",
+                "lineno": 1208
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5bbdff",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "_PyRun_SimpleFileObject",
+                "lineno": 456
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5bbb63",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "_PyRun_AnyFileObject",
+                "lineno": 90
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_file_obj",
+                "lineno": 357
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_file",
+                "lineno": 376
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_python",
+                "lineno": 595
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "Py_RunMain",
+                "lineno": 674
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5885d9",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "Py_BytesMain",
+                "lineno": 1094
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7ff9e63e6083",
+                "file": "/build/glibc-FcRMwW/glibc-2.31/csu/../csu/libc-start.c",
+                "func": "__libc_start_main",
+                "lineno": 308
+            }
+        }
+    ],
+    [
+        {
+            "CFrame": {
+                "ip": "0x7f32e82ed3c9",
+                "file": "",
+                "func": "__cudart1050",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7f32e8326905",
+                "file": "",
+                "func": "cudaDeviceSynchronize",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7f32e82defd4",
+                "file": "",
+                "func": "c10::cuda::device_synchronize()",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7f32d9d25438",
+                "file": "",
+                "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fbc95",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+                "func": "cfunction_vectorcall_NOARGS",
+                "lineno": 489
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/torch/cuda/__init__.py",
+                "func": "synchronize",
+                "lineno": 688,
+                "locals": {
+                    "device": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py",
+                "func": "_cuda_sync",
+                "lineno": 363,
+                "locals": {
+                    "torch": {
+                        "id": 139856630111168,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch' from '/opt/conda/lib/python3.10/site-packages/torch/__init__.py'>"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py",
+                "func": "post_step_hook",
+                "lineno": 348,
+                "locals": {
+                    "kwargs": {
+                        "id": 139853531520576,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "args": {
+                        "id": 139856630193728,
+                        "class": "builtins.tuple",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "(SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: "
+                    },
+                    "opt": {
+                        "id": 139853997093264,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "self": {
+                        "id": 139853993351616,
+                        "class": "probing.profiling.torch_probe.TorchProbe",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<probing.profiling.torch_probe.TorchProbe object at 0x7f324b9819c0>"
+                    },
+                    "__class__": {
+                        "id": 3001218128,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'probing.profiling.torch_probe.TorchProbe'>"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+                "func": "method_vectorcall",
+                "lineno": 53
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/torch/optim/optimizer.py",
+                "func": "wrapper",
+                "lineno": 285,
+                "locals": {
+                    "args": {
+                        "id": 139856630193728,
+                        "class": "builtins.tuple",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "(SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: "
+                    },
+                    "_": {
+                        "id": 139853562836544,
+                        "class": "builtins.list",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "[]"
+                    },
+                    "pre_hook": {
+                        "id": 139854008357440,
+                        "class": "builtins.method",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<bound method BaseTracer.pre_step_hook of <probing.profiling.torch_probe.TorchProbe object at 0x7f324b9819c0>>"
+                    },
+                    "kwargs": {
+                        "id": 139853531520576,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "out": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "profile_name": {
+                        "id": 139853581338944,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "Optimizer.step#SGD.step"
+                    },
+                    "result": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "post_hook": {
+                        "id": 139854006428096,
+                        "class": "builtins.method",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<bound method TorchProbe.post_step_hook of <probing.profiling.torch_probe.TorchProbe object at 0x7f324b9819c0>>"
+                    },
+                    "self": {
+                        "id": 139853997093264,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "func": {
+                        "id": 139854035956448,
+                        "class": "builtins.function",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<function _use_grad_for_differentiable.<locals>._use_grad at 0x7f324e2232e0>"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/home/yang/ddp/sinMmulCard.py",
+                "func": "<module>",
+                "lineno": 85,
+                "locals": {
+                    "DistributedSampler": {
+                        "id": 107449936,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.distributed.DistributedSampler'>"
+                    },
+                    "Dataset": {
+                        "id": 107127056,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.dataset.Dataset'>"
+                    },
+                    "__doc__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "optimizer": {
+                        "id": 139853997093264,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "__cached__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "parser": {
+                        "id": 139856630201264,
+                        "class": "argparse.ArgumentParser",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "ArgumentParser(prog='sinMmulCard.py', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_he"
+                    },
+                    "model": {
+                        "id": 139853997093648,
+                        "class": "torch.nn.parallel.distributed.DistributedDataParallel",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "DistributedDataParallel(\n  (module): Model(\n    (conv2d): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1))\n    (fc): Linear(in_features=14400, out_fea"
+                    },
+                    "step": {
+                        "id": 139856687628560,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "2"
+                    },
+                    "dataset": {
+                        "id": 139853993351712,
+                        "class": "__main__.RandomDataset",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<__main__.RandomDataset object at 0x7f324b981a20>"
+                    },
+                    "__name__": {
+                        "id": 139856686849584,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "__main__"
+                    },
+                    "config": {
+                        "id": 139853993350656,
+                        "class": "argparse.Namespace",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "Namespace(gpu_id='0,1,2,3', batchSize=64, epochs=5000000, dataset_size=1024, num_classes=10)"
+                    },
+                    "sampler": {
+                        "id": 139856630201216,
+                        "class": "torch.utils.data.distributed.DistributedSampler",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<torch.utils.data.distributed.DistributedSampler object at 0x7f32e8c33b80>"
+                    },
+                    "__loader__": {
+                        "id": 139856686715696,
+                        "class": "_frozen_importlib_external.SourceFileLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7f32ec219330>"
+                    },
+                    "Variable": {
+                        "id": 102616592,
+                        "class": "torch.autograd.variable.VariableMeta",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.autograd.variable.Variable'>"
+                    },
+                    "SGD": {
+                        "id": 105003632,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.optim.sgd.SGD'>"
+                    },
+                    "device": {
+                        "id": 139853994970704,
+                        "class": "torch.device",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "cuda:0"
+                    },
+                    "loss_func": {
+                        "id": 139856630200976,
+                        "class": "torch.nn.modules.loss.CrossEntropyLoss",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "CrossEntropyLoss()"
+                    },
+                    "epoch": {
+                        "id": 139853798914544,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "5819"
+                    },
+                    "loader": {
+                        "id": 139856630193632,
+                        "class": "torch.utils.data.dataloader.DataLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<torch.utils.data.dataloader.DataLoader object at 0x7f32e8c31de0>"
+                    },
+                    "DataLoader": {
+                        "id": 107433648,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.dataloader.DataLoader'>"
+                    },
+                    "__annotations__": {
+                        "id": 139856686849664,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "__builtins__": {
+                        "id": 139856688253184,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'builtins' (built-in)>"
+                    },
+                    "preds": {
+                        "id": 139853580965168,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64, 10])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:0",
+                        "value": "tensor([[1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n"
+                    },
+                    "__file__": {
+                        "id": 139856686773504,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "/home/yang/ddp/sinMmulCard.py"
+                    },
+                    "torch": {
+                        "id": 139856630111168,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch' from '/opt/conda/lib/python3.10/site-packages/torch/__init__.py'>"
+                    },
+                    "RandomDataset": {
+                        "id": 109807648,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class '__main__.RandomDataset'>"
+                    },
+                    "local_rank": {
+                        "id": 139856687628496,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "0"
+                    },
+                    "argparse": {
+                        "id": 139853995767216,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'argparse' from '/opt/conda/lib/python3.10/argparse.py'>"
+                    },
+                    "__package__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "labels": {
+                        "id": 139854024482448,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64])",
+                        "dtype": "torch.int64",
+                        "device": "cuda:0",
+                        "value": "tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,"
+                    },
+                    "loss": {
+                        "id": 139853533655536,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:0",
+                        "value": "tensor(1.4612, device='cuda:0', grad_fn=<NllLossBackward0>)"
+                    },
+                    "nn": {
+                        "id": 139854043047760,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch.nn' from '/opt/conda/lib/python3.10/site-packages/torch/nn/__init__.py'>"
+                    },
+                    "images": {
+                        "id": 139856630267968,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64, 3, 32, 32])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:0",
+                        "value": "tensor([[[[-4.6292e-01, -3.2641e-01,  1.7714e+00,  ..., -2.5600e-02,\n           -4.2515e-01,  7.0377e-01],\n          [ 1.3174e+00,  8.3399e-01,  9.364"
+                    },
+                    "__spec__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "os": {
+                        "id": 139856686876208,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'os' from '/opt/conda/lib/python3.10/os.py'>"
+                    },
+                    "Model": {
+                        "id": 109820080,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class '__main__.Model'>"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5c6737",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "run_eval_code_obj",
+                "lineno": 1291
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5c1870",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "run_mod",
+                "lineno": 1312
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x459839",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "pyrun_file",
+                "lineno": 1208
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5bbdff",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "_PyRun_SimpleFileObject",
+                "lineno": 456
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5bbb63",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "_PyRun_AnyFileObject",
+                "lineno": 90
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_file_obj",
+                "lineno": 357
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_file",
+                "lineno": 376
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_python",
+                "lineno": 595
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "Py_RunMain",
+                "lineno": 674
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5885d9",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "Py_BytesMain",
+                "lineno": 1094
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7f32ec44d083",
+                "file": "/build/glibc-FcRMwW/glibc-2.31/csu/../csu/libc-start.c",
+                "func": "__libc_start_main",
+                "lineno": 308
+            }
+        }
+    ],
+    [
+        {
+            "CFrame": {
+                "ip": "0x7f619095b3c9",
+                "file": "",
+                "func": "__cudart1050",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7f6190994905",
+                "file": "",
+                "func": "cudaDeviceSynchronize",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7f619094cfd4",
+                "file": "",
+                "func": "c10::cuda::device_synchronize()",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7f619150d438",
+                "file": "",
+                "func": "THCPModule_cudaSynchronize(_object*, _object*)",
+                "lineno": 0
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fbc95",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/methodobject.c",
+                "func": "cfunction_vectorcall_NOARGS",
+                "lineno": 489
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/torch/cuda/__init__.py",
+                "func": "synchronize",
+                "lineno": 688,
+                "locals": {
+                    "device": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4f2c56",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py",
+                "func": "_cuda_sync",
+                "lineno": 363,
+                "locals": {
+                    "torch": {
+                        "id": 140057142090688,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch' from '/opt/conda/lib/python3.10/site-packages/torch/__init__.py'>"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/probing/profiling/torch_probe.py",
+                "func": "post_step_hook",
+                "lineno": 348,
+                "locals": {
+                    "self": {
+                        "id": 140054435961232,
+                        "class": "probing.profiling.torch_probe.TorchProbe",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<probing.profiling.torch_probe.TorchProbe object at 0x7f60f6e79990>"
+                    },
+                    "kwargs": {
+                        "id": 140054057006144,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "opt": {
+                        "id": 140054439686544,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "__class__": {
+                        "id": 2945383904,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'probing.profiling.torch_probe.TorchProbe'>"
+                    },
+                    "args": {
+                        "id": 140057142173248,
+                        "class": "builtins.tuple",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "(SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: "
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x509a7e",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/classobject.c",
+                "func": "method_vectorcall",
+                "lineno": 53
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee44f",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/opt/conda/lib/python3.10/site-packages/torch/optim/optimizer.py",
+                "func": "wrapper",
+                "lineno": 285,
+                "locals": {
+                    "_": {
+                        "id": 140054073525568,
+                        "class": "builtins.list",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "[]"
+                    },
+                    "args": {
+                        "id": 140057142173248,
+                        "class": "builtins.tuple",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "(SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: "
+                    },
+                    "profile_name": {
+                        "id": 140054073555136,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "Optimizer.step#SGD.step"
+                    },
+                    "result": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "kwargs": {
+                        "id": 140054057006144,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "out": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "self": {
+                        "id": 140054439686544,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "post_hook": {
+                        "id": 140054480230016,
+                        "class": "builtins.method",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<bound method TorchProbe.post_step_hook of <probing.profiling.torch_probe.TorchProbe object at 0x7f60f6e79990>>"
+                    },
+                    "pre_hook": {
+                        "id": 140054440822400,
+                        "class": "builtins.method",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<bound method BaseTracer.pre_step_hook of <probing.profiling.torch_probe.TorchProbe object at 0x7f60f6e79990>>"
+                    },
+                    "func": {
+                        "id": 140054478484192,
+                        "class": "builtins.function",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<function _use_grad_for_differentiable.<locals>._use_grad at 0x7f60f97072e0>"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4fe13f",
+                "file": "/usr/local/src/conda/python-3.10.16/Objects/call.c",
+                "func": "_PyFunction_Vectorcall",
+                "lineno": 342
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "_PyObject_VectorcallTstate",
+                "lineno": 114
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Include/cpython/abstract.h",
+                "func": "PyObject_Vectorcall",
+                "lineno": 123
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x4ee861",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/ceval.c",
+                "func": "call_function",
+                "lineno": 5893
+            }
+        },
+        {
+            "PyFrame": {
+                "file": "/home/yang/ddp/sinMmulCard.py",
+                "func": "<module>",
+                "lineno": 85,
+                "locals": {
+                    "parser": {
+                        "id": 140057142180784,
+                        "class": "argparse.ArgumentParser",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "ArgumentParser(prog='sinMmulCard.py', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_he"
+                    },
+                    "sampler": {
+                        "id": 140057142180736,
+                        "class": "torch.utils.data.distributed.DistributedSampler",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<torch.utils.data.distributed.DistributedSampler object at 0x7f6198353b80>"
+                    },
+                    "Dataset": {
+                        "id": 77774704,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.dataset.Dataset'>"
+                    },
+                    "dataset": {
+                        "id": 140054435961376,
+                        "class": "__main__.RandomDataset",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<__main__.RandomDataset object at 0x7f60f6e79a20>"
+                    },
+                    "DataLoader": {
+                        "id": 78082640,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.dataloader.DataLoader'>"
+                    },
+                    "__name__": {
+                        "id": 140057198829104,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "__main__"
+                    },
+                    "RandomDataset": {
+                        "id": 80458240,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class '__main__.RandomDataset'>"
+                    },
+                    "__file__": {
+                        "id": 140057198753024,
+                        "class": "builtins.str",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "/home/yang/ddp/sinMmulCard.py"
+                    },
+                    "SGD": {
+                        "id": 75653344,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.optim.sgd.SGD'>"
+                    },
+                    "loader": {
+                        "id": 140057142173152,
+                        "class": "torch.utils.data.dataloader.DataLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<torch.utils.data.dataloader.DataLoader object at 0x7f6198351de0>"
+                    },
+                    "os": {
+                        "id": 140057198855728,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'os' from '/opt/conda/lib/python3.10/os.py'>"
+                    },
+                    "step": {
+                        "id": 140057199608080,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "2"
+                    },
+                    "__loader__": {
+                        "id": 140057198695264,
+                        "class": "_frozen_importlib_external.SourceFileLoader",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<_frozen_importlib_external.SourceFileLoader object at 0x7f619b939360>"
+                    },
+                    "__cached__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "images": {
+                        "id": 140054438405488,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64, 3, 32, 32])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:3",
+                        "value": "tensor([[[[ 1.5328e-01,  6.0829e-02, -1.7244e+00,  ..., -1.3551e+00,\n           -1.5753e+00,  7.1807e-01],\n          [-2.7143e+00,  2.0672e+00, -2.198"
+                    },
+                    "loss_func": {
+                        "id": 140057142180496,
+                        "class": "torch.nn.modules.loss.CrossEntropyLoss",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "CrossEntropyLoss()"
+                    },
+                    "config": {
+                        "id": 140054435960320,
+                        "class": "argparse.Namespace",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "Namespace(gpu_id='0,1,2,3', batchSize=64, epochs=5000000, dataset_size=1024, num_classes=10)"
+                    },
+                    "loss": {
+                        "id": 140054075083408,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:3",
+                        "value": "tensor(1.4612, device='cuda:3', grad_fn=<NllLossBackward0>)"
+                    },
+                    "__builtins__": {
+                        "id": 140057200232704,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'builtins' (built-in)>"
+                    },
+                    "nn": {
+                        "id": 140054485494064,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch.nn' from '/opt/conda/lib/python3.10/site-packages/torch/nn/__init__.py'>"
+                    },
+                    "__spec__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "DistributedSampler": {
+                        "id": 78098928,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.utils.data.distributed.DistributedSampler'>"
+                    },
+                    "torch": {
+                        "id": 140057142090688,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'torch' from '/opt/conda/lib/python3.10/site-packages/torch/__init__.py'>"
+                    },
+                    "optimizer": {
+                        "id": 140054439686544,
+                        "class": "torch.optim.sgd.SGD",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "SGD (\nParameter Group 0\n    dampening: 0\n    differentiable: False\n    foreach: None\n    lr: 0.1\n    maximize: False\n    momentum: 0.9\n    nesterov: F"
+                    },
+                    "local_rank": {
+                        "id": 140057199608112,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "3"
+                    },
+                    "argparse": {
+                        "id": 140054438405648,
+                        "class": "builtins.module",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<module 'argparse' from '/opt/conda/lib/python3.10/argparse.py'>"
+                    },
+                    "epoch": {
+                        "id": 140054075893680,
+                        "class": "builtins.int",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "5819"
+                    },
+                    "__doc__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "__package__": {
+                        "id": 7628576,
+                        "class": "builtins.NoneType",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "None"
+                    },
+                    "Variable": {
+                        "id": 73267856,
+                        "class": "torch.autograd.variable.VariableMeta",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class 'torch.autograd.variable.Variable'>"
+                    },
+                    "device": {
+                        "id": 140054437580368,
+                        "class": "torch.device",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "cuda:3"
+                    },
+                    "__annotations__": {
+                        "id": 140057198829184,
+                        "class": "builtins.dict",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "{}"
+                    },
+                    "Model": {
+                        "id": 80470672,
+                        "class": "builtins.type",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "<class '__main__.Model'>"
+                    },
+                    "labels": {
+                        "id": 140054467091712,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64])",
+                        "dtype": "torch.int64",
+                        "device": "cuda:3",
+                        "value": "tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,"
+                    },
+                    "preds": {
+                        "id": 140054073540832,
+                        "class": "torch.Tensor",
+                        "shape": "torch.Size([64, 10])",
+                        "dtype": "torch.float32",
+                        "device": "cuda:3",
+                        "value": "tensor([[1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n        [1., 0., 0., 0., 0., 0., 0., 0., 0., 0.],\n"
+                    },
+                    "model": {
+                        "id": 140054439686928,
+                        "class": "torch.nn.parallel.distributed.DistributedDataParallel",
+                        "shape": null,
+                        "dtype": null,
+                        "device": null,
+                        "value": "DistributedDataParallel(\n  (module): Model(\n    (conv2d): Conv2d(3, 16, kernel_size=(3, 3), stride=(1, 1))\n    (fc): Linear(in_features=14400, out_fea"
+                    }
+                }
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5c6737",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "run_eval_code_obj",
+                "lineno": 1291
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5c1870",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "run_mod",
+                "lineno": 1312
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x459839",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "pyrun_file",
+                "lineno": 1208
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5bbdff",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "_PyRun_SimpleFileObject",
+                "lineno": 456
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5bbb63",
+                "file": "/usr/local/src/conda/python-3.10.16/Python/pythonrun.c",
+                "func": "_PyRun_AnyFileObject",
+                "lineno": 90
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_file_obj",
+                "lineno": 357
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_file",
+                "lineno": 376
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "pymain_run_python",
+                "lineno": 595
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5b891d",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "Py_RunMain",
+                "lineno": 674
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x5885d9",
+                "file": "/usr/local/src/conda/python-3.10.16/Modules/main.c",
+                "func": "Py_BytesMain",
+                "lineno": 1094
+            }
+        },
+        {
+            "CFrame": {
+                "ip": "0x7f619bb6d083",
+                "file": "/build/glibc-FcRMwW/glibc-2.31/csu/../csu/libc-start.c",
+                "func": "__libc_start_main",
+                "lineno": 308
+            }
+        }
+    ]
+]

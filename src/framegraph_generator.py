@@ -2,12 +2,20 @@ import json
 import logging
 import subprocess
 
+import os
 import sys
 sys.path.append(".")
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+target_subdir = 'debug'
+target_dir = os.path.join(project_root, target_subdir)
+
+from tire_stack import merge_stacks
 
 # 配置日志
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
+
 
 class FlameGraphGenerator:
     def __init__(self, flamegraph_bin: str = "/home/yang/Downloads/FlameGraph-1.0/flamegraph.pl"
@@ -58,13 +66,20 @@ class FlameGraphGenerator:
         for stack in out_stacks:
             stack.reverse()  # 直接修改原列表
         
-        # 写入输出文件
-        with open(self.output_file, 'w') as f:
-            for rank in out_stacks:
-                if rank != []:
-                    for stack in rank:
-                        f.write(f"{stack};")
-                    f.write(" 1\n") 
+        # 将堆栈数据写入输出文件
+        prepare_stacks = []
+        for rank in out_stacks:
+            if rank != []:
+                data = ""
+                for stack in rank:
+                        data += f"{stack};"
+                prepare_stacks.append(data)
+        
+        # 合并堆栈
+        trie = merge_stacks(prepare_stacks)
+        with open(self.output_file, "w") as f:
+            for stack in trie:
+                f.write(f"{stack}; 1\n")
     
     def generate_flamegraph(self, output_file: str) -> None:
         """生成火焰图
@@ -92,6 +107,17 @@ if __name__ == "__main__":
     # generator = FlameGraphGenerator(input_json="./tmp/output.json", output_file="./tmp/stacks.txt")
     # generator.generate_flamegraph("./tmp/flamegraph.svg")    
 
-    generator = FlameGraphGenerator(input_json="./debug_4ranks_stack_data.json", 
-                                    output_file="./debug_4stacks.txt")
-    generator.generate_flamegraph("./debug_flamegraph_4ranks.svg")  
+    # generator = FlameGraphGenerator(input_json="./debug_4ranks_stack_data.json", 
+    #                                 output_file="./debug_4stacks.txt")
+    # generator.generate_flamegraph("./debug_flamegraph_4ranks.svg")  
+
+    
+    target_json_path = os.path.join(target_dir, 'debug_4ranks_stack_data.json')
+    target_txt_path = os.path.join(target_dir, 'debug_4stacks.txt')
+    target_svg_path = os.path.join(target_dir, 'debug_flamegraph_4ranks.svg')
+    generator = FlameGraphGenerator(input_json=target_json_path, 
+                                    output_file=target_txt_path)
+    generator.generate_flamegraph(target_svg_path)  
+
+
+    
